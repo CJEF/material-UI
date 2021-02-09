@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+  background-color: $background;
+  color: white;
+  font-family: 'Roboto-Regular';
+}
+
+strong {
+  font-weight: 700;
+}
+
+button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  max-width: 1230px;
+  padding: 90px 15px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.global-label {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 15px;
+  margin-top: 40px;
+}

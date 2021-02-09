@@ -1,0 +1,114 @@
+.appbar-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $blue;
+  padding: 18.5px 36px 21.5px 27.5px;
+  align-items: center;
+  [class^="icon-"], [class*=" icon-"] {
+      color: white;
+      font-size: 20px;
+  }
+  .icon-plus {
+    font-size: 14px;
+  }
+  .icon-dots:before {
+    font-size: 15.5px;
+  }
+  .icon-search:before {
+      font-size: 17.5px;
+  }
+  .icon-menu:before {
+    font-size: 12px;
+  }
+  .icon-mail:before {
+    font-size: 16px;
+  }
+  &__link {
+    margin-left: 35px;
+    margin-right: 25px;
+    font-size: 20px;
+  }
+  .login {
+    margin-left: auto;
+    font-size: 14px;
+  }
+  &--white {
+    background-color: white;
+    .appbar-wrap__link {
+      margin-left: 0;
+      color: black;
+    }
+  }
+  &__icon {
+    position: relative;
+    padding: 15px;
+    &-badge {
+      display: flex;
+      position: absolute;
+      min-width: 20px;
+      height: 20px;
+      top: 0;
+      right: 7px;
+      border-radius: 50%;
+      background-color: $beta-pink;
+      font-size: 12px;
+      font-weight: 500;
+      justify-content: center; // по горизонтали
+      align-items: center; // по вертикали
+    }
+    &:before {
+      color: white;
+    }
+  }
+  .burger {
+    display: inline-block;
+  }
+  &__input {
+    position: relative;
+    display: inline-block;
+
+
+
+    &.icon-search:before {
+      z-index: 2;
+      position: absolute;
+      left: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__add-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -28px;
+      right: 50%;
+      transform: translateX(-50%);
+      width: 56px;
+      height: 56px;
+      background-color: $pink;
+      border-radius: 50%;
+      transition: .3s;
+  }
+  // &__add-button:hover {
+  //   transform: rotate(360deg);
+  //   transform: translateX(-50%);
+  // }
+}
+
+.search-input {
+  position: relative;
+  background-color: $input;
+  padding: 9px 20px 8px 60px;
+  color: white;
+  &::placeholder {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: $input-placeholder;
+  }
+  // &:value {
+  //   font-family: 'Roboto-Regular', sans-serif;
+  // }
+}

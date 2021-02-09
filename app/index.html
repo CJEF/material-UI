@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/app.min.css" />
+  <title>UI</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="appbar">
+        <!-- appbar -->
+        <div class="global-label">
+          <span>App Bar with buttons</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="burger">
+            <a href="#" class="icon-menu"></a>
+          </div>
+          <a href="#" class="appbar-wrap__link">News</a>
+          <a href="#" class="login">LOGIN</a>
+        </div>
+
+        <div class="global-label">
+          <span>Simple App Bar</span>
+        </div>
+        <div class="appbar-wrap appbar-wrap--white">
+          <a href="#" class="appbar-wrap__link">Photos</a>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with a primary search field</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Material-UI</a>
+            <div class="appbar-wrap__input icon-search">
+              <input type="text" class="search-input" placeholder="Search...">
+            </div>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-mail">
+              <span class="appbar-wrap__icon-badge">4</span>
+            </a>
+            <a href="#" class="appbar-wrap__icon icon-notification">
+              <span class="appbar-wrap__icon-badge">17</span>
+            </a>
+            <a href="#" class="appbar-wrap__icon icon-login">
+            </a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with menu</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Photos</a>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-login"></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with search field</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Material-UI</a>
+          </div>
+          <div class="appbar-wrap__right">
+            <div class="appbar-wrap__input icon-search">
+              <input type="text" class="search-input" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Dense (desktop only)</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="burger">
+            <a href="#" class="icon-menu"></a>
+          </div>
+          <a href="#" class="appbar-wrap__link">Photos</a>
+        </div>
+
+        <div class="global-label">
+          <span>Bottom App Bar</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-search"></a>
+            <a href="#" class="appbar-wrap__icon icon-dots"></a>
+          </div>
+          <a href="#" class="appbar-wrap__add-button icon-plus"></a>
+        </div>
+      </div> <!-- ../appbar -->
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="global-label">
+          <span>Simple Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>Item one</span></a>
+            <a href="#" class="tab__header-item"><span>Item two</span></a>
+            <a href="#" class="tab__header-item"><span>Item three</span></a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Wrapped Labels</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>NEW ARRIVALS IN THE LONGEST
+                TEXT OF NINFICTION</span></a>
+            <a href="#" class="tab__header-item"><span>Item two</span></a>
+            <a href="#" class="tab__header-item"><span>Item three</span></a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Disabled Tab</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white tab__header--white-disabled">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>ACTIVE</span></a>
+            <a href="#" class="tab__header-item tab__header-item--disabled" disabled>DISABLED</span></a>
+            <a href="#" class="tab__header-item"><span>ACTIVE</span></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Centered Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>item one</span></a>
+            <a href="#" class="tab__header-item">item two</span></a>
+            <a href="#" class="tab__header-item"><span>item three</span></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Icon (+Text) Tabs +Forced Scroll Buttons</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active">
+              <span class="icon-phone"></span>
+              <span>ITEM ONE</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-like"></span>
+              <span>ITEM TWO</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-login"></span>
+              <span>Item three</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-help"></span>
+              <span>Item four</span>
+            </a>
+            <div class="tab__header-right">
+              <a href="#" class="icon-arrow"></a>
+            </div>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+            <div class="tab__content-item">item four</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Icon Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active">
+              <span class="icon-phone"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-like"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-login"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-help"></span>
+            </a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+            <div class="tab__content-item">item four</div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ../Tabs -->
+
+      <!-- Badges -->
+      <div class="badges">
+        <div class="global-label">
+          <span>Simple Badges</span>
+        </div>
+        <div class="row">
+          <div class="badges-mail">
+            <div class="badges__mail badges__mail--blue">
+              <a href="#" class="icon-mail"><span>4</span></a>
+            </div>
+            <div class="badges__mail badges__mail--pink">
+              <a href="#" class="icon-mail"><span>10</span></a>
+            </div>
+            <div class="badges__mail badges__mail--dis" disabled>
+              <a href="#" class="icon-mail"><span>4</span></a>
+            </div>
+          </div>
+          <div class="badges-typography">
+            <a href="#" class="badges-typography__link">
+              typography
+              <span>4</span>
+            </a>
+          </div>
+          <div class="badges-button">
+            <button class="badges__button">
+              button
+              <span>4</span>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="tab">
+            <div class="tab__header">
+              <a href="#" class="tab__header-item tab__header-item--active">Item one<span>4</span></a>
+              <a href="#" class="tab__header-item">Item two</a>
+              <a href="#" class="tab__header-item">Item three</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="maximum-value">
+            <div class="global-label">
+              <span>Maximum Value</span>
+            </div>
+            <div class="maximum-value__buttons">
+              <button class="icon-mail">
+                <span>99</span>
+              </button>
+              <button class="icon-mail">
+                <span>99+</span>
+              </button>
+              <button class="icon-mail">
+                <span>999+</span>
+              </button>
+            </div>
+          </div>
+          <div class="dot-badge">
+            <div class="global-label">
+              <span>Dot Badge</span>
+            </div>
+            <div class="dot-badge__buttons">
+              <button class="icon-mail">
+                <span></span>
+              </button>
+              <button class="icon-mail">
+                <span></span>
+              </button>
+              <div class="typography">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ../Badges -->
+
+    </div> <!-- ../container -->
+  </main>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
