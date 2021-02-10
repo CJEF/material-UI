@@ -240,37 +240,47 @@
         <div class="global-label">
           <span>Simple Badges</span>
         </div>
-        <div class="row">
-          <div class="badges-mail">
-            <div class="badges__mail badges__mail--blue">
-              <a href="#" class="icon-mail"><span>4</span></a>
-            </div>
-            <div class="badges__mail badges__mail--pink">
-              <a href="#" class="icon-mail"><span>10</span></a>
-            </div>
-            <div class="badges__mail badges__mail--dis" disabled>
-              <a href="#" class="icon-mail"><span>4</span></a>
-            </div>
-          </div>
+        <div class="row badges__row">
+          <ul class="badges-mail__list">
+            <li class="badges-mail__icon">
+              <div class="badges-mail--blue badges-main">
+                <a href="#" class="icon-mail"></a>
+                <span class="badges__span-badge">4</span>
+              </div>
+            </li>
+            <li class="badges-mail__icon">
+              <div class="badges-mail--pink badges-main">
+                <a href="#" class="icon-mail"></a>
+                <span class="badges__span-badge">10</span>
+              </div>
+            </li>
+            <li class="badges-mail__icon">
+              <div class="badges-mail--dis badges-main">
+                <a href="#" class="icon-mail"></a>
+                <span class="badges__span-badge">4</span>
+              </div>
+            </li>
+          </ul>
           <div class="badges-typography">
-            <a href="#" class="badges-typography__link">
-              typography
-              <span>4</span>
-            </a>
+            <p class="badges-typography__item">
+              Typography
+              <span class="badges__span-badge badges-typo__span">4</span>
+            </p>
           </div>
           <div class="badges-button">
-            <button class="badges__button">
+            <button class="badges-button__item">
               button
-              <span>4</span>
+              <span class=" class="badges__span-badge" badges-button__span">4</span>
             </button>
           </div>
         </div>
         <div class="row">
           <div class="tab">
             <div class="tab__header">
-              <a href="#" class="tab__header-item tab__header-item--active">Item one<span>4</span></a>
-              <a href="#" class="tab__header-item">Item two</a>
-              <a href="#" class="tab__header-item">Item three</a>
+              <a href="#" class="tab__header-item tab__header-item--active">one<span class="badges__span-badge badges__tab-badge">4</span></a>
+              <a href="#" class="tab__header-item">two</a>
+              <a href="#" class="tab__header-item">three</a>
+              <a href="#" class="tab__header-item">four</a>
             </div>
           </div>
         </div>
@@ -280,15 +290,23 @@
               <span>Maximum Value</span>
             </div>
             <div class="maximum-value__buttons">
-              <button class="icon-mail">
-                <span>99</span>
-              </button>
-              <button class="icon-mail">
-                <span>99+</span>
-              </button>
-              <button class="icon-mail">
-                <span>999+</span>
-              </button>
+              <ul class="maximum-value__list">
+                <li class="maximum-value__item">
+                  <button class="icon-mail">
+                  </button>
+                  <span class="badges__span-badge">99</span>
+                </li>
+                <li class="maximum-value__item">
+                  <button class="icon-mail">
+                  </button>
+                  <span class="badges__span-badge">99+</span>
+                </li>
+                <li class="maximum-value__item">
+                  <button class="icon-mail">
+                  </button>
+                  <span class="badges__span-badge">999+</span>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="dot-badge">
@@ -297,10 +315,10 @@
             </div>
             <div class="dot-badge__buttons">
               <button class="icon-mail">
-                <span></span>
+                <span class="badges__span-badge"></span>
               </button>
               <button class="icon-mail">
-                <span></span>
+                <span class="badges__span-badge"></span>
               </button>
               <div class="typography">
                 <span></span>
