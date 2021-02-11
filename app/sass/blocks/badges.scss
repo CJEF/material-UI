@@ -6,6 +6,8 @@
         align-items: center;
         margin-top: 30px;
         margin-bottom: 40px;
+        max-width: 480px;
+        justify-content: space-between;
     }
     &__span-badge {
             position: absolute;
@@ -13,8 +15,8 @@
             position: absolute;
             min-width: 20px;
             min-height: 20px;
-           top: -13px;
-            right: -1px;
+            top: 0;
+            right: 0;
             border-radius: 10px;
             background-color: $blue;
             font-size: 12px;
@@ -62,7 +64,6 @@
 
     &-typography {
         position: relative;
-        margin: auto 80px auto 60px;
         &__item {
             color: black;
             font-size: 14px;
@@ -113,13 +114,46 @@
 
     .maximum-value {
         margin-right: 90px;
+        &__list {
+            display: flex;
+        }
+        &__item {
+            position: relative;
+        }
         &__buttons {
             margin-left: -13px;
         }
     }
 
-    .dot-badge__buttons {
-        margin-left: -13px;
+    .dot-badge {
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__item {
+            margin-right: 10px;
+        }
+        &__button {
+            position: relative;
+            margin-left: -13px;
+        }
+        &__span  {
+            min-width: 6px;
+            min-height: 6px;
+            border-radius:13px;
+            position: absolute;
+            background-color: $blue;
+            top: 7px;
+            right: 10px;
+        }
+        &__typography {
+            position: relative;
+            color: black;
+            &-span {
+                top: -2px;
+                right: -6px;
+            }
+        }
     }
 
 

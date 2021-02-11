@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // Табы
 	$(".tab__header-item").on("click", function (e) {
 		e.preventDefault();
     var $this = $(this);
@@ -17,4 +19,11 @@ $(document).ready(function() {
       console.log(22);
     }
   });
+
+  // если текст подсказки 999+, жлемент смещается на 5px чтобы не закрывать иконку
+  $('.badges__span-badge').each(function() {
+    if($(this).text() === '999+') {
+      $(this).css('transform', 'translateX(5px)')
+    }
+  })
 })
