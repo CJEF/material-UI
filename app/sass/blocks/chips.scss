@@ -10,25 +10,54 @@
     &--gray {
         background-color: rgba(0, 0, 0, 0.1);
         color: black;
+        &_outline {
+            border: 1px solid rgba(0, 0, 0, 0.36);
+            background-color: transparent;
+        }
     }
     &--blue {
         background-color: $blue;
         color: white;
         .chips__item-before {
-            background-color: $blue;
+            background-color: $info-msg;
+        }
+        .chips__item-before p {
+            color: white;
         }
         [class*=" icon-"], [class^=icon-] {
             color: white;
+        }
+        &_outline {
+            border: 1px solid $blue;
+            background-color: transparent;
+            color: $blue;
+            [class*=" icon-"], [class^=icon-] {
+                color: $blue;
+            }
+            .chips__item-before .icon-sticker {
+                color: white;
+            }
         }
     }
     &--pink {
         background-color: $pink;
         color: white;
         .chips__item-before {
-            background-color: $pink;
+            background-color: $gamma-pink;
         }
         [class*=" icon-"], [class^=icon-] {
             color: white;
+        }
+        &_outline {
+            border: 1px solid $pink;
+            background-color: transparent;
+            color: $pink;
+            [class*=" icon-"], [class^=icon-] {
+                color: $pink;
+            }
+            .chips__item-before .icon-sticker {
+                color: white;
+            }
         }
     }
 }
