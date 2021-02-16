@@ -60,6 +60,16 @@
             }
         }
     }
+    .icon-sticker {
+            font-size: 16px;
+            padding: 8px;
+        }
+    .icon-done {
+        font-size: 14px;
+    }
+    .icon-close:hover {
+        cursor: pointer;
+    }
 }
 
 .chips__item {
@@ -80,12 +90,12 @@
         }
     }
     &-after {
-        padding: 8px 8px 6px 0;
+        padding: 7px 8px 7px 0;
         font-size: 20px;
         border-radius: 70px;
     }
     &-before {
-        display: inline-block;
+        display: inline-flex;
         border-radius: 100%;
         overflow: hidden;
         background-color:$chips-before;
@@ -103,20 +113,17 @@
     &-span {
         padding: 0 13px;
     }
-    .icon-sticker {
-        font-size: 16px;
-        padding: 8px;
-    }
-    .icon-close:hover {
-        cursor: pointer;
-    }
-    .icon-done {
-        font-size: 14px;
-    }
 }
 
 .chips {
     &__list {
         margin-bottom: 15px;
+    }
+
+    &__array-list {
+        display: flex;
+    }
+    &__array-item {
+        padding-right: 15px;
     }
 }
