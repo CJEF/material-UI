@@ -9,19 +9,34 @@
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.87);
     transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    [class*=" icon-"], [class^=icon-] {
+        color: black;
+    }
     &--pink {
+        [class*=" icon-"], [class^=icon-] {
+            color: white;
+        }
         color: white;
         background-color:$pink;
     }
     &--blue {
+        [class*=" icon-"], [class^=icon-] {
+            color: white;
+        }
         color: white;
         background-color:$blue;
+        box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.24);
     }
     &--dis {
         cursor: default;
         pointer-events: none;
         user-select: none;
         color: rgba(0, 0, 0, 0.36);
+        [class*=" icon-"], [class^=icon-] {
+            color: $disabled;
+        }
     }
     &--transparent {
         &.basic-button--blue {
@@ -30,6 +45,7 @@
         &.basic-button--pink {
             color: $pink;
         }
+        box-shadow: none;
         background-color: transparent;
         &:hover {
             background-color: rgba(0, 0, 0, 0.1);
@@ -41,6 +57,7 @@
         &.basic-button--blue {
             color: $blue;
             border:  1px solid $blue;
+            box-shadow: none;
         }
         &.basic-button--pink {
             color: $pink;
@@ -49,7 +66,16 @@
         &.basic-button--inherit {
         color: black;
         border: 1px solid black;
+        }
     }
+    &--small {
+        padding: 7px 12px;
+    }
+    &--medium {
+        padding: 9px 16px;
+    }
+    &--large {
+        padding: 13px 25px;
     }
 }
 
@@ -58,9 +84,21 @@
         display: flex;
         align-items: center;
         margin-bottom: 25px;
+        &--withTab {
+            align-items: start;
+            .buttons__item:last-child {
+                margin: 0 0 0 15px;
+                .tab__content {
+                    min-height: 150px;
+                }
+            }
+        }
     }
     &__item {
         margin-right: 15px;
+    }
+    .size {
+        display: flex;
     }
 }
 
@@ -80,6 +118,7 @@
     transition: .3s;
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
     &--pink {
         background-color: $beta-pink;
         [class*=" icon-"], [class^=icon-] {
@@ -104,7 +143,102 @@
         [class*=" icon-"], [class^=icon-] {
             margin-right: 10px;
         }
+        &_blue {
+            background-color: $blue;
+            color: white;
+            [class*=" icon-"], [class^=icon-] {
+            margin-right: 10px;
+            color: white;
+            }
+        }
+        span {
+                font-size: 14px;
+        }
+        &_small {
+            padding: 7px 13px 8px;
+        }
+        &_medium {
+            padding: 10px 19px 11px;
+        }
+        &_large {
+            padding: 14px 19px 15px;
+        }
+    }
+    &--absolute {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+    }
+    &--small {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    &--medium {
+        max-width: 48px;
+        max-height: 48px;
+    }
+    &--large {
+        max-width: 56px;
+        max-height: 56px;
     }
 }
 
 /* ../Floating Action Buttons */
+
+/* Size */
+
+.size {
+    .buttons__list {
+        flex-direction: column;
+        align-items: start;
+    }
+    .buttons__item {
+        display: flex;
+        align-items: center;
+        button {
+            margin: 0 15px 30px 0;
+        }
+        .icon-local {
+            margin: 0 15px;
+        }
+    }
+
+}
+
+.icon-local {
+    cursor: pointer;
+    &--small {
+        font-size: 16px;
+    }
+    &--medium {
+        font-size: 20px;
+    }
+    &--large {
+        font-size: 28px;
+    }
+}
+/* ../Size */
+
+
+/* Icon-label buttons */
+
+.icon-span-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-span-button {
+    [class*=" icon-"]:before, [class^=icon-]:before {
+        font-size: 18px;
+        margin-right: 6px;
+    }
+}
+
+.span-icon-button {
+    [class*=" icon-"]:before, [class^=icon-]:before {
+        font-size: 18px;
+        margin-left: 6px;
+    }
+}
+
+/* ../Icon-label buttons */

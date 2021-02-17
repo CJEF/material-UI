@@ -2,10 +2,14 @@
     padding: 80px 0;
 }
 .tab {
+    position: relative;
     &__header {
+        position: relative;
         display: flex;
         width: 100%;
         background-color: $blue;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24);
+        z-index: 2;
         &-item {
             position: relative;
             padding: 6px 24px;
@@ -33,6 +37,8 @@
             text-align: center;
             align-items: center;
             background-color: white;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24);
+            z-index: 2;
             .tab__header-item {
                 [class^="icon-"], [class*=" icon-"] {
                     font-size: 19px;
@@ -71,6 +77,7 @@
         }
     }
     &__content {
+        position: relative;
         width: 100%;
         padding: 28px 26px 31px;
         background-color: white;
