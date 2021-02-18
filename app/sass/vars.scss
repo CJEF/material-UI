@@ -1,20 +1,29 @@
 $blue: #2196F3;
 $pink:  #E10050;
+$gray:  #333333;
+
+$beta-gray: #DADADA;
 $beta-pink: #E91E63;
 $gamma-pink: #9D0038;
-$gray:  #333333;
-$beta-gray: #DADADA;
 $chips-before: #C4C4C4;
-$success-msg: #43A047;
-$info-msg:  #1976D2;
-$warning-msg:#FFA000;
-$error-msg: #B00020;
 $background:  #F4F4F4;
-$input-placeholder: #91CBF9;
+
 $input: #42A6F5;
+$input-placeholder: #91CBF9;
 $disabled: #9B9B9B;
+$custom-checkbox: #E7A423;
+
 $hover-blue: #DCE9F3; // при наводе на кнопку с прозрачным фоновым цветом
 $hover-pink: rgba(237, 156, 185, .3); //при наводе на кнопку с прозрачным фоновым цветом
 $pressed-blue:#A4CFF2; // при клике на кнопки и задержании
 $pressed-pink:rgba(225, 0, 80, .3); // при клике на кнопки и задержании
 $hover-main-blue: #1D84D6; // при навелении на кноаку с синим фоном
+
+$black-light: rgba(0, 0, 0, 0.36);
+$black-dark: rgba(0, 0, 0, 0.87);
+$black-medium: rgba(0, 0, 0, 0.54);
+
+$success-msg: #43A047;
+$info-msg:  #1976D2;
+$warning-msg:#FFA000;
+$error-msg: #B00020;
