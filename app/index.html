@@ -282,21 +282,12 @@
 <!-- TODO: переделать табы -->
 
           <div class="tab">
-              <ul class="tab__header-list">
-                <li class="tab__header-item">
-                  <a href="#" class="tab__header-item tab__header-item--active">one</a>
-                  <span class="badges__span-badge badges__tab-badge">4</span>
-                </li>
-                <li class="tab__header-item">
-                  <a href="#" class="tab__header-item">two</a>
-                </li>
-                <li class="tab__header-item">
-                  <a href="#" class="tab__header-item">three</a>
-                </li>
-                <li class="tab__header-item">
-                  <a href="#" class="tab__header-item">four</a>
-                </li>
-              </ul>
+              <div class="tab__header">
+                <a href="#" class="tab__header-item tab__header-item--active"><span>one</span><span class="badges__span-badge badges__tab-badge">4</span></a>
+                <a href="#" class="tab__header-item"><span>two</span></a>
+                <a href="#" class="tab__header-item"><span>three</span></a>
+                <a href="#" class="tab__header-item"><span>four</span></a>
+              </div>
           </div>
         </div>
         <div class="row">
@@ -1031,6 +1022,72 @@
       </div>
 
       <!-- ../Buttons -->
+      
+      <!-- Radiobuttons -->
+      <div class="radiobuttons">
+        <p class="global-label">Radio Buttons</p>
+        <div class="radiobuttons__gender radiobuttons__list-wrapper">
+          <ul class="radiobuttons__list">
+            <legend>Gender</legend>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Female</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Male</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Other</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink radiobuttons__input--dis" disabled>
+                <span>(Disabled option)</span>
+              </label>
+            </li>
+          </ul>
+
+          <ul class="radiobuttons__list">
+            <legend>Gender</legend>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Female</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Male</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Other</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15 disabled-span">(Disabled option)</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue radiobuttons__input--dis" disabled>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ../Radiobuttons -->
+
+      <!-- Checkboxes -->
+      <!-- ../Checkboxes -->
 
     </div>
 

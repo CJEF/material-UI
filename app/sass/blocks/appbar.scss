@@ -21,6 +21,9 @@
   .icon-menu:before {
     font-size: 12px;
   }
+  .icon-mail {
+    padding: 0;
+  }
   .icon-mail:before {
     font-size: 16px;
   }
@@ -42,14 +45,14 @@
   }
   &__icon {
     position: relative;
-    padding: 15px;
+    margin-left: 30px;
     &-badge {
       display: flex;
       position: absolute;
       min-width: 20px;
       height: 20px;
-      top: 0;
-      right: 7px;
+      top: -13px;
+    right: -9px;
       border-radius: 50%;
       background-color: $beta-pink;
       font-size: 12px;
@@ -111,4 +114,8 @@
   // &:value {
   //   font-family: 'Roboto-Regular', sans-serif;
   // }
+}
+
+.appbar-wrap .appbar-wrap__icon.icon-notification .appbar-wrap__icon-badge {
+  top: -9px;
 }

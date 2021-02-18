@@ -1,0 +1,115 @@
+.radiobuttons {
+    &__input {
+        position: relative;
+        appearance: none;
+        border: 2px solid rgba(0, 0, 0, 0.54);
+        outline: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    &__label {
+        color: rgba(0, 0, 0, 0.87);
+        display: flex;
+        span {
+            cursor: pointer;
+        }
+    }
+    &__item {
+        margin-bottom: 30px;
+    }
+    &__list {
+        margin-right: 70px;
+        legend {
+            font-size: 16px;
+            line-height: 19px;
+            color: black;
+            margin-bottom: 20px;
+        }
+    }
+    &__gender {
+        display: flex;
+    }
+    &__label input:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.5);
+        background-color: rgba(0, 0, 0, 0.54);
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    &__label input:checked:after {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        opacity: 0;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        -webkit-animation: mui-checkbox-ripple-animation 0.7s;
+        animation: mui-checkbox-ripple-animation 0.7s;    
+    }
+    &__input--pink:after {
+        background-color: $pink;
+    }
+    &__input--blue:after {
+        background-color: $blue;
+    }
+    &__label input:checked:before {
+        opacity: 1;
+        transform: scale(0.65);
+    }
+    &__input--pink:checked:before {
+        background-color: $pink;
+    }
+    &__input--blue:checked:before {
+        background-color: $blue;
+    }
+    &__input--pink:checked{
+        border-color: $pink;
+    }
+    &__input--blue:checked{
+        border-color: $blue;
+    }
+    .mr-15 {
+        margin-right: 15px;
+        color: rgba(0, 0, 0, 0.54);
+        cursor: pointer;
+        color: black;
+    }
+    .disabled-span {
+        cursor: default;
+        color: rgba(0, 0, 0, 0.36);
+    }
+    &__input--dis {
+        cursor: default;
+        border-color: rgba(0, 0, 0, 0.36);
+    }
+    &__input--dis ~ span {
+        color: rgba(0, 0, 0, 0.36);
+        user-select: none;
+        cursor: default;
+    }
+}
+
+@keyframes mui-checkbox-ripple-animation {
+from {
+    transform: scale(0.5);
+    opacity: 0.4;
+}
+to {
+    transform: scale(3);
+    opacity: 0;
+}
+}
