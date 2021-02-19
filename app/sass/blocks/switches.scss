@@ -3,7 +3,7 @@
         display: flex;
     }
     &__item {
-        margin-right: 17px;
+        margin-right: 20px;
     }
 }
 
@@ -33,6 +33,9 @@
             left: 18px;
             background-color: white;
     }
+    &:checked {
+        background-color: #A8A8A8;
+    }
 
     &--blue, &--pink {
         background-color: $black-light;
@@ -60,6 +63,38 @@
         &:checked:before {
             left: 17px;
             background-color: black;
+        }
+    }
+    &--dis {
+        cursor: default;
+        &:before {
+            background-color:  #BDBDBD;
+        }
+        &:checked:before {
+            background-color:  #BDBDBD;
+        }
+    }
+    &--with-margin {
+        margin-right: 15px;
+    }
+}
+
+.lable-placement {
+    display: flex;
+    .radiobuttons__label {
+        &--top{
+            display: flex;
+            flex-direction: column;
+        }
+        &--start{
+
+        }
+        &--bottom{
+            display: flex;
+            flex-direction: column;
+        }
+        &--end{
+
         }
     }
 }

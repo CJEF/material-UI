@@ -385,6 +385,7 @@
                     <img src="images/dest/cat.jpg" alt="cat">
                   </div>
                   <span class="chips__item-span">Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
                 </div>
               </li>
               <li class="chips__item">
@@ -1229,25 +1230,100 @@
           <div class="switches__wrap">
             <ul class="switches__list">
               <li class="switches__item">
-                <input type="checkbox" class="switches-input switches-input--pink">
+                <input type="checkbox" class="switches-input switches-input--pink" checked>
               </li>
               <li class="switches__item">
-                <input type="checkbox" class="switches-input switches-input--blue">
+                <input type="checkbox" class="switches-input switches-input--blue" checked>
               </li>
               <li class="switches__item">
                 <input type="checkbox" class="switches-input switches-input--uncontrolled">
               </li>
               <li class="switches__item">
-                <input type="checkbox" class="switches-input">
+                <input type="checkbox" class="switches-input switches-input--dis" disabled>
               </li>
               <li class="switches__item">
-                <input type="checkbox" class="switches-input">
+                <input type="checkbox" class="switches-input switches-input--dis" disabled checked>
               </li>
               <li class="switches__item">
-                <input type="checkbox" class="switches-input">
+                <input type="checkbox" class="switches-input" checked>
               </li>
             </ul>
           </div>
+
+          <p class="global-label">Switches with FormControlLabel</p>
+          <ul class="switches__list">
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--pink" checked>
+              <span>Secondary</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--blue" checked>
+              <span>Primary</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--uncontrolled">
+              <span>Uncontrolled</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--dis" disabled>
+              <span>Disabled</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--dis" disabled>
+              <span>Disabled</span>
+            </li>
+          </ul>
+
+          <p class="global-label">Switches with FormGroup</p>
+          <div class="checkbox-group">
+            <div class="checkbox-group__left">
+              <legend>Assign responsibility</legend>
+              <ul class="checkbox-group__list">
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin" checked>
+                    <span class="checkbox-span ml">Gilad Gray</span>
+                  </label>
+                </li>
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin">
+                    <span class="checkbox-span ml">Jason Killian</span>
+                  </label>
+                </li>
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin" checked>
+                    <span class="checkbox-span ml">Antoine Llorca</span>
+                  </label>
+                </li>
+              </ul>
+              <span class="checkbox-group__left-span">Be careful</span>
+            </div>
+          </div>
+
+          <p class="global-label">Label placement</p>
+          <div class="lable-placement">
+            <label class="radiobuttons__label radiobuttons__label--top">
+              <span>Top</span>
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--start">
+              <span>Start</span>
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--bottom">
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+              <span>Bottom</span>
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--end">
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+              <span>End</span>
+            </label>
+          </div>
+
+
+
         </div>
       <!-- ../Switches -->
 

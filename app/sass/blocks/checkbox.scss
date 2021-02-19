@@ -91,10 +91,13 @@
       legend {
         color: $black-medium;
         font-size: 16px;
+        color: black;
       }
     }
     &__left-span {
         margin-top: 15px;
+        font-size: 12px;
+        color: black-medium;
       }
     &__item {
       display: flex;
@@ -105,11 +108,12 @@
     }
     &__right {
       &-span {
-        font-size: 16px;
+        font-size: 12px;
         color: #f44336;
         margin-top: 15px;
         &:first-child {
           margin: 0 0 20px 0;
+          font-size: 16px;
         }
       }
     }
