@@ -359,6 +359,8 @@
 
       <!-- Chips -->
 
+<!-- * Посмотреть отступы где внешние а где внутренние? -->
+
       <div class="chips">
         <div class="chips__contained">
           <div class="global-label">
@@ -1083,6 +1085,21 @@
             </li>
           </ul>
         </div>
+
+        <div class="radiobuttons__state">
+          <label class="radiobuttons__label">
+            <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+          <label class="radiobuttons__label">
+            <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+          <label class="radiobuttons__label">
+            <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+          <label class="radiobuttons__label">
+            <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+        </div>
       </div>
       <!-- ../Radiobuttons -->
 
@@ -1149,35 +1166,90 @@
       </ul>
 
       <p class="global-label">Checkboxes with FormGroup</p>
-      <div class="checkbox-form">
-        <legend>Assign responsibility</legend> <span>Pict two*</span>
-        <ul class="checkbox-form__list">
-          <li class="checkbox-form__item">
-            <input type="checkbox" class="checkbox-input">
-            <span>Gilad Gray</span>
-            <input type="checkbox" class="checkbox-input">
-            <span>Gilad Gray</span>
-          </li>
-          <li class="checkbox-form__item">
-            <input type="checkbox" class="checkbox-input">
-            <span>Jason Killian</span>
-            <input type="checkbox" class="checkbox-input">
-            <span>Jason Killian</span>
-          </li>
-          <li class="checkbox-form__item">
-            <input type="checkbox" class="checkbox-input">
-            <span>Antoine Llorca</span>
-            <input type="checkbox" class="checkbox-input">
-            <span>Antoine Llorca</span>
-          </li>
-        </ul>
-        <div class="bottom-spans">
-          <span>Be careful</span>
-          <span>You can display an error</span>
+      <div class="checkbox-group">
+          <div class="checkbox-group__left">
+            <legend>Assign responsibility</legend>
+            <ul class="checkbox-group__list">
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Gilad Gray</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Jason Killian</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Antoine Llorca</span>
+                </label>
+              </li>
+            </ul>
+            <span class="checkbox-group__left-span">Be careful</span>
+          </div>
+          <div class="checkbox-group__right">
+            <span class="checkbox-group__right-span">Pict two*</span>
+            <ul class="checkbox-group__list">
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Gilad Gray</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Jason Killian</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Antoine Llorca</span>
+                </label>
+              </li>
+            </ul>
+
+<!-- * span не задается отступ -->
+
+            <span class="checkbox-group__right-span">You can display an error</span>
         </div>
+
       </div>
 
       <!-- ../Checkboxes -->
+
+      <!-- Switches -->
+        <div class="swithes">
+          <p class="global-label">Switches</p>
+          <div class="switches__wrap">
+            <ul class="switches__list">
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--pink">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--blue">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--uncontrolled">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input">
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- ../Switches -->
 
     </div>
 

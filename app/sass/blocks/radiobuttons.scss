@@ -103,6 +103,10 @@
     user-select: none;
     cursor: default;
   }
+  &__state {
+    margin: 60px 0;
+    display: flex;
+  }
 }
 
 @keyframes mui-checkbox-ripple-animation {
