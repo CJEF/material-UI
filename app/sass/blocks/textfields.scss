@@ -1,4 +1,11 @@
 .textfields {
+    &__list-2 {
+        display: flex;
+        margin-top: 60px;
+        .textfields__item {
+            margin-bottom: 0;
+        }
+    }
     &__wrap {
         display: flex;
     }
@@ -6,7 +13,7 @@
         margin-right: 30px;
     }
     &__item {
-        margin-bottom: 20px;
+        margin-bottom: 45px;
         display: flex;
         align-items: center;
     }
@@ -31,6 +38,13 @@
         position: relative;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        .icon-like-2 {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
     &__placeholder {
         position: absolute;
@@ -43,12 +57,12 @@
     &-first:hover,
     &-first--hovered {
         border-color: $black-dark;
-    }  
+    }
     &-first.dirty,
     &-first:valid,
     &-first:focus {
         border-color: $blue;
-    }  
+    }
     &-first:focus ~ .textfield__placeholder,
     &-first--focused .textfield__placeholder {
             color: $blue;
@@ -66,5 +80,68 @@
     &-first--disabled {
         cursor: default;
         pointer-events: none;
+    }
+
+    /* second textfield */
+
+    &__placeholder--outlined {
+        padding: 0 6px;
+    }
+
+    &-second:focus ~ .textfield__placeholder--outlined,
+    &-second--focused .textfield__placeholder--outlined {
+            color: $blue;
+            font-size: 12px;
+            top: -7px;
+            transform: translateY(0);
+            background-color: #F4F4F4;
+    }
+
+    &-second {
+        border: 2px solid $black-light;
+        border-radius: 4px;
+        padding: 10px 13px;
+        position: relative;
+
+        &--error {
+            border: 2px solid #f44336;
+            border-color: #f44336;
+            border-radius: 4px;
+            padding: 10px 13px;
+        }
+        &--error:focus ~ .textfield__placeholder--outlined,
+        &-second--focused .textfield__placeholder--outlined {
+            color: #F44336;
+            font-size: 12px;
+            top: -7px;
+            transform: translateY(0);
+            background-color: #F4F4F4;
+        }
+        &:hover,
+        &--hovered {
+            border-color: $black-dark;
+        }
+
+        &:focus {
+            border-color: $blue;
+        }
+    }
+
+    &__placeholder--outlined.textfield__placeholder {
+        left: 8px;
+    }
+
+    &__helper {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        color: $black-medium;
+        font-size: 12px;
+        position: absolute;
+        top: 42px;
+        left: 15px;
+        &--red {
+            color: #f44336;
+        }
     }
 }
