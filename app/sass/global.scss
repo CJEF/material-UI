@@ -54,9 +54,10 @@ strong {
 
 button {
   // font-family: "Roboto";
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   border: none;
+  padding: 0;
   background-color: transparent;
 
   &:focus {

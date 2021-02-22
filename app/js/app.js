@@ -27,3 +27,14 @@ $(document).ready(function() {
     }
   })
 })
+
+$("input").each(function(element) {
+  element.on('blur', function(e) {
+    if(e.target.val()) {
+      console.log(e.target.val());
+      e.target.addClass('dirty');
+    } else {
+      e.target.removeClass('dirty');
+    }
+  })
+})

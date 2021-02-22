@@ -2,12 +2,15 @@
 @import "./vendors/normalize.scss";
 @import "./fonts.scss";
 @import "./global.scss";
+
+@import "./blocks/appbar.scss";
+@import "./blocks/tabs.scss";
 @import "./blocks/badges.scss";
 @import "./blocks/chips.scss";
 @import "./blocks/buttons.scss";
 @import "./blocks/radiobuttons.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/switches.scss";
-
-@import "./blocks/appbar.scss";
-@import "./blocks/tabs.scss";
+@import "./blocks/tooltips.scss";
+@import "./blocks/textfields.scss";
+@import "./blocks/snackbars.scss";

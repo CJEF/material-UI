@@ -1,0 +1,70 @@
+.textfields {
+    &__wrap {
+        display: flex;
+    }
+    &__list:first-child {
+        margin-right: 30px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .global-label__span {
+        margin-bottom: 0;
+        min-width: 55px;
+    }
+}
+
+.textfield {
+    appearance: none;
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 16px;
+    color: $black-dark;
+    width: 320px;
+    margin-right: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid $black-light;
+    transition: background-size 0.3s ease;
+    &-label {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__placeholder {
+        position: absolute;
+        color: $black-medium;
+        transition: .3s ease;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &-first:hover,
+    &-first--hovered {
+        border-color: $black-dark;
+    }  
+    &-first.dirty,
+    &-first:valid,
+    &-first:focus {
+        border-color: $blue;
+    }  
+    &-first:focus ~ .textfield__placeholder,
+    &-first--focused .textfield__placeholder {
+            color: $blue;
+            opacity: 0.87;
+            font-size: 12px;
+            top: -10px;
+            transform: translateY(0);
+    }
+    &-first--error:focus {
+        border-color: #F44336;
+    }
+    &-first--error:focus ~ .textfield__placeholder {
+        color: #F44336;
+    }
+    &-first--disabled {
+        cursor: default;
+        pointer-events: none;
+    }
+}
