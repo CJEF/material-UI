@@ -1,13 +1,21 @@
+/* TODO: colors to vars */
 .textfields {
     &__list-2 {
         display: flex;
         margin-top: 60px;
+        flex-wrap: wrap;
         .textfields__item {
             margin-bottom: 0;
+            margin-right: 15px;
         }
     }
     &__wrap {
         display: flex;
+        align-items: center;
+        &-2 {
+            margin-top: 50px;
+
+        }
     }
     &__list:first-child {
         margin-right: 30px;
@@ -21,16 +29,23 @@
         margin-bottom: 0;
         min-width: 55px;
     }
+    &__list-uni {
+        display: flex;
+        align-items: center;
+        .textfields__item {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .textfield {
     appearance: none;
     background-color: transparent;
-    padding: 10px 0;
+    padding: 22px 13px 10px 0;
     font-size: 16px;
     color: $black-dark;
     width: 320px;
-    margin-right: 15px;
     background-color: transparent;
     border-bottom: 2px solid $black-light;
     transition: background-size 0.3s ease;
@@ -39,11 +54,17 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        .icon-like-2 {
-            position: absolute;
-            right: 30px;
-            top: 50%;
-            transform: translateY(-50%);
+        .icon-like-2,
+        .icon-fail,
+        .icon-star,
+        .icon-eye {
+            @include input-icons;
+        }
+        .icon-fail {
+            color: #F44336;
+        }
+        .icon-eye {
+            cursor: pointer;
         }
     }
     &__placeholder {
@@ -68,7 +89,7 @@
             color: $blue;
             opacity: 0.87;
             font-size: 12px;
-            top: -10px;
+            top: 0px;
             transform: translateY(0);
     }
     &-first--error:focus {
@@ -97,17 +118,19 @@
             background-color: #F4F4F4;
     }
 
+    /* second */
+
     &-second {
-        border: 2px solid $black-light;
+        border: 1px solid $black-light;
         border-radius: 4px;
-        padding: 10px 13px;
+        padding: 19px 40px 19px 13px;
         position: relative;
 
         &--error {
-            border: 2px solid #f44336;
+            border: 1px solid #f44336;
             border-color: #f44336;
             border-radius: 4px;
-            padding: 10px 13px;
+            padding:  19px 40px 19px 13px;
         }
         &--error:focus ~ .textfield__placeholder--outlined,
         &-second--focused .textfield__placeholder--outlined {
@@ -138,10 +161,165 @@
         color: $black-medium;
         font-size: 12px;
         position: absolute;
-        top: 42px;
+        top: 57px;
         left: 15px;
         &--red {
             color: #f44336;
         }
     }
+
+    /* textfields-wrap-2 */
+
+    &-select {
+        position: relative;
+        color: $black-medium;
+        cursor: pointer;
+        .default-value {
+            min-width: 200px;
+            position: relative;
+            border: 1px solid $black-light;
+            border-radius: 4px;
+            padding: 20px 12px;
+
+            &:after {
+                content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    width: 0px;
+                    height: 0px;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 5px solid #000;
+            }
+        }
+        .default-value.default-value--filled {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $black-light;
+            background-color: rgba(0,0,0,.03);
+
+            & ~ .textfield-select__placeholder {
+                background-color: transparent;
+                padding: 0 2.5px;
+                top: 3px;
+            }
+        }
+        &__placeholder {
+            position: absolute;
+            font-size: 12px;
+            top: -6px;
+            left: 9px;
+            padding: 0 4px;
+            background-color: #F4F4F4;
+        }
+        &__helper {
+            font-size: 12px;
+            padding-left: 12px;
+        }
+        &__body {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: #ccc;
+            overflow: hidden;
+            border-radius: 4px;
+            top: 64px;
+            z-index: 2;
+            &.active {
+                display: block;
+            }
+        }
+
+        &__item {
+            padding: 10px;
+            transition: .2s;
+            &:hover {
+                background-color: $black-light;
+                color: white;
+            }
+        }
+
+        &__span {
+            // padding: 7px 7px;
+        }
+
+    }
+
+
+
+    &-textarea {
+        resize: none;
+        border: 1px solid $black-light;
+        border-radius: 4px;
+        padding: 18px 12px 13px;
+        width: 315px;
+        min-height: 90px;
+        margin-right: 0;
+        &__placeholder {
+            position: absolute;
+            top: -7.5px;
+            padding: 0 4px 2px;
+            left: 9px;
+            font-size: 12px;
+            background-color: #F4F4F4;
+            color: $black-medium;
+        }
+        &:hover {
+            border-color: $black-dark;
+        }
+    }
+
+    /* ../textfields-wrap-2 */
+
+
+    /* textfield filled */
+
+    &-fill {
+        transition: .2s;
+        margin-top: 70px;
+    }
+    &-filled {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding-left: 12px;
+        &:hover {
+            background-color: #DADADA;
+        }
+    }
+    &-filled ~ &__placeholder {
+        padding-left: 12px;
+    }
+    &-filled:focus ~ .textfield__placeholder,
+    &-filled--focused .textfield__placeholder {
+        top: 5px;
+    }
+
+    &-textarea.textfield-textarea--filled.textfield {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid $black-light;
+        background-color: rgba(0,0,0,.03);
+        &:hover {
+            background-color: #dadada;
+            border-bottom:1px solid $black-dark;
+        }
+        & ~ .textfield-textarea__placeholder {
+            background-color: transparent;
+            top: 3px;
+        }
+        &:focus {
+            border-bottom:1px solid $black-dark;
+        }
+    }
+
+    /* ../textfield filled */
+
+    /* adornments */
+
+    &-label.textfield-label--adornment .textfield{
+        max-width: 200px;
+    }
+
+    /* ../adornments */
 }

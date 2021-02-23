@@ -1,5 +1,5 @@
 .snackbars {
-    
+
     &__top {
         display: flex;
     justify-self: space-between;
@@ -17,10 +17,14 @@
     cursor: pointer;
     margin-bottom: 20px;
 
+    .icon-cross {
+        font-size: 14px;
+    }
+
     [class^="icon-"], [class*=" icon-"] {
         color: white;
     }
-    
+
     &__span {
         letter-spacing: 0.25px;
         font-size: 14px;
@@ -38,6 +42,9 @@
     &__end {
         display: flex;
         justify-content: space-between;
+        .icon-cross::before {
+            font-size: 14px;
+        }
     }
     &-classic .snackbar__span--pink {
         margin-right: 0;

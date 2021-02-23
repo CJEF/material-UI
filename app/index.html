@@ -1408,8 +1408,8 @@
                 <span class="global-label__span">Error Message</span>
               </li>
               <li class="textfields__item">
-                <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--disabled" required>
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-first" required>
                   <span class="textfield__placeholder">Label</span>
                 </label>
                 <span class="global-label__span">Disabled</span>
@@ -1470,8 +1470,8 @@
                 <span class="global-label__span">Error Message</span>
               </li>
               <li class="textfields__item">
-                <label class="textfield-label">
-                  <input type="text" class="textfield textfield-second textfield-second--disabled" required>
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-second" required>
                   <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
                   <div class="icon-like-2"></div>
                   <p class="textfield__helper">Helper text</p>
@@ -1486,20 +1486,20 @@
             <ul class="textfields__list-2">
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-second" required="">
+                  <input type="text" class="textfield textfield-second" required>
                   <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
                 </label>
               </li>
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-second" required="">
+                  <input type="text" class="textfield textfield-second" required>
                   <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
                   <p class="textfield__helper">Helper text</p>
                 </label>
               </li>
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-second" required="">
+                  <input type="text" class="textfield textfield-second" required>
                   <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
                   <div class="icon-like-2"></div>
                   <p class="textfield__helper">Helper text</p>
@@ -1507,10 +1507,262 @@
               </li>
 
             </ul>
+          </div>
 
+<!-- TODO -->
 
+          <div class="textfields__wrap textfields__wrap-2">
+            <ul class="textfields__list-uni">
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                    <p class="textfield-select__helper">Please select your currency</p>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-multiline">
+                  <label class="textfield-label">
+                    <textarea type="text" class="textfield textfield-textarea"
+                    required>Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                    <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                  </label>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Adornment</span>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
 
           </div>
+
+
+          <!-- textfield fill -->
+
+          <div class="textfield-fill">
+            <p class="global-label">Filled</p>
+            <div class="textfields__wrap">
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <span class="global-label__span">Inactive</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Focused</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--focused textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Activated</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--hovered textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                  <span class="global-label__span">Hover</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--error textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <div class="icon-fail"></div>
+                  </label>
+                  <span class="global-label__span">Error Message</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label disabled">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                  <span class="global-label__span">Disabled</span>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="textfields__wrap">
+              <ul class="textfields__list-2">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <div class="icon-star"></div>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="textfields__wrap textfields__wrap-2">
+              <ul class="textfields__list-uni">
+                <li class="textfields__item">
+                  <div class="textfield-select">
+                    <ul class="textfield-select__header">
+                      <li class="textfield-select__header-item">
+                        <div class="default-value default-value--filled">$</div>
+                        <span class="textfield-select__placeholder">Select-text</span>
+                      </li>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </ul>
+                    <ul class="textfield-select__body">
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">tg</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">rub</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">$</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="textfields__item">
+                  <div class="textfield-multiline">
+                    <label class="textfield-label">
+                      <textarea type="text" class="textfield textfield-textarea textfield-textarea--filled"
+                        required="">Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                      <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <!-- ../Text Field filled -->
+
+
+          <!-- Text Field Adornments -->
+
+          <p class="global-label">Text Field Adornments</p>
+          <div class="textfields__wrap">
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="Kg">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value default-value--filled">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                    <p class="textfield-select__helper">Please select your currency</p>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="$">
+                  <span class="textfield__placeholder">Amount</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required>
+                </label>
+                <p class="textfield-select__helper">weight</p>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required>
+                  <span class="textfield__placeholder">Password</span>
+                  <div class="icon-eye"></div>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required>
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required>
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- ../Text Field Adornments -->
+
         </div>
 
       <!-- ../Text Field -->
