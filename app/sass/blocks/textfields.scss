@@ -44,7 +44,7 @@
 .textfield {
     appearance: none;
     background-color: transparent;
-    padding: 22px 13px 18px 0;
+    padding: 22px 35px 18px 0;
     font-size: 16px;
     color: $black-dark;
     width: 320px;
@@ -52,6 +52,7 @@
     border-bottom: 1px solid $black-light;
     transition: background-size 0.3s ease;
     line-height: 14px;
+
     &-label {
         position: relative;
         display: flex;
@@ -65,7 +66,7 @@
             @include input-icons;
         }
         .icon-fail {
-            color: #F44336;
+            color: $error-input;
         }
         .icon-eye {
             cursor: pointer;
@@ -98,13 +99,30 @@
     &-first--focused ~ .textfield__placeholder,
     &-second:valid ~ .textfield__placeholder,
     &-second:focus ~ .textfield__placeholder,
-    &-second--focused ~ .textfield__placeholder {
+    &-second--focused ~ .textfield__placeholder,
+    &-second--error:valid ~ .textfield__placeholder,
+    &-first--error:valid ~ .textfield__placeholder {
         border-color: $black-medium;
         opacity: 0.87;
         font-size: 12px;
         top: -7px;
-        background-color: #F4F4F4;
+        background-color: $bgc;
         transform: translateY(0);
+    }
+
+    &-filled--error:valid ~ .textfield__placeholder {
+        top: 5px;
+        color: $error-input;
+    }
+    &-filled--focused:valid ~ .textfield__placeholder {
+        top: 5px;
+        color: $blue;
+    }
+    &-filled--error:valid {
+        border-color: $error-input;
+    }
+    &-filled--focused:valid {
+        border-color: $blue;
     }
 
     &-filled:focus ~ .textfield__placeholder,
@@ -117,10 +135,10 @@
         color: $blue;
     }
     &-first--error:focus {
-        border-color: #F44336;
+        border-color: $error-input;
     }
     &-first--error:focus ~ .textfield__placeholder {
-        color: #F44336;
+        color: $error-input;
     }
     &-first--disabled {
         cursor: default;
@@ -139,7 +157,7 @@
             font-size: 12px;
             top: -7px;
             transform: translateY(0);
-            background-color: #F4F4F4;
+            background-color: $bgc;
     }
 
     /* second */
@@ -151,18 +169,21 @@
         position: relative;
 
         &--error {
-            border: 1px solid #f44336;
-            border-color: #f44336;
+            border: 1px solid $error-input;
+            border-color: $error-input;
             border-radius: 4px;
             padding:  19px 40px 19px 13px;
+            & ~ .textfield__placeholder {
+                color: $error-input;
+            }
         }
         &--error:focus ~ .textfield__placeholder--outlined,
         &-second--focused .textfield__placeholder--outlined {
-            color: #F44336;
+            color: $error-input;
             font-size: 12px;
             top: -7px;
             transform: translateY(0);
-            background-color: #F4F4F4;
+            background-color: $bgc;
         }
         &:hover,
         &--hovered {
@@ -191,7 +212,7 @@
         top: 57px;
         left: 15px;
         &--red {
-            color: #f44336;
+            color: $error-input;
         }
     }
 
@@ -206,7 +227,7 @@
             position: relative;
             border: 1px solid $black-light;
             border-radius: 4px;
-            padding: 18px 12px;
+            padding: 19px 12px;
 
             &:after {
                 content: "";
@@ -230,7 +251,6 @@
             & ~ .textfield-select__placeholder {
                 background-color: transparent;
                 padding: 0 2.5px;
-                top: 3px;
             }
 
             &.transparent-bgc {
@@ -243,7 +263,7 @@
             top: -6px;
             left: 9px;
             padding: 0 4px;
-            background-color: #F4F4F4;
+            background-color: $bgc;
         }
         &__helper {
             font-size: 12px;
@@ -279,7 +299,7 @@
     &-textarea {
         resize: none;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 19px;
         border: 1px solid $black-light;
         border-radius: 4px;
         padding: 18px 12px 13px;
@@ -292,7 +312,7 @@
             padding: 0 4px 2px;
             left: 9px;
             font-size: 12px;
-            background-color: #F4F4F4;
+            background-color: $bgc;
             color: $black-medium;
         }
         &:hover {

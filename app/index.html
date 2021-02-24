@@ -1588,7 +1588,7 @@
                 <li class="textfields__item">
                   <span class="global-label__span">Focused</span>
                   <label class="textfield-label">
-                    <input type="text" class="textfield textfield-first textfield-first--focused textfield-filled" required value="Helper text">
+                    <input type="text" class="textfield textfield-first textfield-first--focused textfield-filled textfield-filled--focused" required value="Helper text">
                     <span class="textfield__placeholder">Input text</span>
                     <p class="textfield__helper">Helper text</p>
                   </label>
@@ -1596,7 +1596,7 @@
                 <li class="textfields__item">
                   <span class="global-label__span">Activated</span>
                   <label class="textfield-label">
-                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <input type="text" class="textfield textfield-first textfield-filled" required value="Input text">
                     <span class="textfield__placeholder">Input text</span>
                     <p class="textfield__helper">Helper text</p>
                   </label>
@@ -1613,7 +1613,7 @@
                 </li>
                 <li class="textfields__item">
                   <label class="textfield-label">
-                    <input type="text" class="textfield textfield-first textfield-first--error textfield-filled" required value="Input text">
+                    <input type="text" class="textfield textfield-first textfield-first--error textfield-filled textfield-filled--error" required value="Input text">
                     <span class="textfield__placeholder">Label</span>
                     <p class="textfield__helper">Error message</p>
                     <div class="icon-fail"></div>
@@ -1699,6 +1699,8 @@
           </div>
 
           <!-- ../Text Field filled -->
+
+<!-- TODO CLASSES OF TEXTFIELDS, errors  with colors, margins of label -->
 
 
           <!-- Text Field Adornments -->
@@ -1956,14 +1958,135 @@
         <p class="global-label">Horizontal Linear</p>
         <span class="global-label__span">Material UI</span>
 
-        <ul class="progressbar__list">
-          <li class="progressbar__item"></li>
-          <li class="progressbar__item"></li>
-          <li class="progressbar__item"></li>
-        </ul>
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title"></span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title"></span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent">BACK</button>
+            <button class="basic-button basic-button--blue">SKIP</button>
+            <button class="basic-button basic-button--blue">NEXT</button>
+          </div>
+        </div>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text"></span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text"></span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent classic-text">BACK</button>
+            <button class="basic-button basic-button--blue classic-text">SKIP</button>
+            <button class="basic-button basic-button--blue classic-text">NEXT</button>
+          </div>
+        </div>
+
+
+        <!-- alternative label -->
+
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title"></span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text"></span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item=circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <!-- Error step -->
+
       </div>
 
       <!-- ../Horizontal Linear -->
+
+      <!-- Vertical Stepper -->
+
+      <div class="slider" id="slick">
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+        <div class="slider__item"></div>
+      </div>
+
+      <!-- ../Vertical Stepper -->
 
     </div>
 
@@ -1971,6 +2094,7 @@
     <!-- ../container -->
 
   </main>
+
 
   <script src="js/app.min.js"></script>
 </body>

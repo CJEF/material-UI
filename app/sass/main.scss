@@ -1,5 +1,6 @@
 @import "./vars.scss";
 @import "./vendors/normalize.scss";
+@import "./vendors/slick.min.css";
 @import "./fonts.scss";
 @import "./global.scss";
 @import "./mixins.scss";
@@ -15,3 +16,4 @@
 @import "./blocks/tooltips.scss";
 @import "./blocks/textfields.scss";
 @import "./blocks/snackbars.scss";
+@import "./blocks/progressbar.scss";

@@ -54,7 +54,9 @@ font-face {
   display: inline-flex;
   color: rgba(0, 0, 0, 0.36);
 
-
+  & ~ .textfield {
+    padding-right: 38px;
+  }
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

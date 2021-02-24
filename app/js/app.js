@@ -16,7 +16,6 @@ $(document).ready(function() {
         .removeClass("tab__content-item--active")
         .eq($(this).index())
         .addClass("tab__content-item--active");
-      console.log(22);
     }
   });
 
@@ -56,3 +55,19 @@ $(".default-value").click(function () {
    tabTitle.text($(this).text());
    tabUl.removeClass("active");
  });
+
+
+ /*  ================== slider  ==================== */
+
+ $("#slick").slick({
+   lazyLoad: "ondemand",
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   dots: true,
+   infinite: true,
+   speed: 500,
+   fade: true,
+   cssEase: "linear",
+ });
+
+ /*  ================== ../slider  ==================== */
