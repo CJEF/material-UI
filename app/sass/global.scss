@@ -76,6 +76,10 @@ input {
   }
 }
 
+textarea:focus {
+  outline: none;
+}
+
 .container {
   max-width: 1230px;
   padding: 90px 15px;
@@ -109,4 +113,10 @@ input {
   font-size: 10px;
   margin-bottom: 12px;
   min-width: 77px;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: .4;
 }

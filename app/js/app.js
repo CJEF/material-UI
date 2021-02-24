@@ -28,13 +28,31 @@ $(document).ready(function() {
   })
 })
 
-$("input").each(function(element) {
-  element.on('blur', function(e) {
-    if(e.target.val()) {
-      console.log(e.target.val());
-      e.target.addClass('dirty');
-    } else {
-      e.target.removeClass('dirty');
-    }
-  })
-})
+// $("input").each(function(element) {
+//   element.on('blur', function(e) {
+//     if(e.target.val()) {
+//       console.log(e.target.val());
+//       e.target.addClass('dirty');
+//     } else {
+//       e.target.removeClass('dirty');
+//     }
+//   })
+// })
+
+$(".default-value").click(function () {
+
+  const wrapper = $(this).closest(".textfield-select");
+  const tabUl = wrapper.find(".textfield-select__body");
+
+  tabUl.toggleClass("active");
+});
+
+ $(".textfield-select__item").on("click", function () {
+   // console.log($(this).text());
+   const wrapper = $(this).closest(".textfield-select");
+   const tabTitle = wrapper.find(".default-value");
+   // const tabTitleText = tabTitle.find(".tabs__base-div");
+   const tabUl = wrapper.find(".textfield-select__body");
+   tabTitle.text($(this).text());
+   tabUl.removeClass("active");
+ });

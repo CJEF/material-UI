@@ -1357,7 +1357,7 @@
 
         <p class="global-label">Multiline Tab</p>
         <div class="tooltips-multiline">
-          <button class="tooltip tooltip-multiline" data-title="When activated, tooltips display a text label identifying an element, such as a description of its function.Tooltips appear 
+          <button class="tooltip tooltip-multiline" data-title="When activated, tooltips display a text label identifying an element, such as a description of its function.Tooltips appear
           on hover, focus, or touch, and disappear after a short duration. Tooltips are always paired nearby the element with which they are associated.Tooltips only include short, descriptive text.">Multiline Tab</button>
         </div>
 
@@ -1380,14 +1380,14 @@
               <li class="textfields__item">
                 <span class="global-label__span">Focused</span>
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--focused" required>
+                  <input type="text" class="textfield textfield-first textfield-first--focused" required value="Text">
                   <span class="textfield__placeholder">Label</span>
                 </label>
               </li>
               <li class="textfields__item">
                 <span class="global-label__span">Activated</span>
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first" required>
+                  <input type="text" class="textfield textfield-first" required value="Text">
                   <span class="textfield__placeholder">Label</span>
                 </label>
               </li>
@@ -1402,14 +1402,14 @@
               </li>
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--error" required>
+                  <input type="text" class="textfield textfield-first textfield-first--error" required value="Input text">
                   <span class="textfield__placeholder">Label</span>
                 </label>
                 <span class="global-label__span">Error Message</span>
               </li>
               <li class="textfields__item">
-                <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--disabled" required>
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-first" required value="Text">
                   <span class="textfield__placeholder">Label</span>
                 </label>
                 <span class="global-label__span">Disabled</span>
@@ -1423,49 +1423,454 @@
               <li class="textfields__item">
                 <span class="global-label__span">Inactive</span>
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first" required>
-                  <span class="textfield__placeholder">Label</span>
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Text</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
                 </label>
               </li>
               <li class="textfields__item">
                 <span class="global-label__span">Focused</span>
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--focused" required>
-                  <span class="textfield__placeholder">Label</span>
+                  <input type="text" class="textfield textfield-second textfield-second--focused" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
                 </label>
               </li>
               <li class="textfields__item">
                 <span class="global-label__span">Activated</span>
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first" required>
-                  <span class="textfield__placeholder">Label</span>
+                  <input type="text" class="textfield textfield-second" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
                 </label>
               </li>
             </ul>
             <ul class="textfields__list">
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--hovered" required>
-                  <span class="textfield__placeholder">Label</span>
+                  <input type="text" class="textfield textfield-second textfield-second--hovered" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Text</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+
                 </label>
                 <span class="global-label__span">Hover</span>
               </li>
               <li class="textfields__item">
                 <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--error" required>
-                  <span class="textfield__placeholder">Label</span>
+                  <input type="text" class="textfield textfield-second--error" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper textfield__helper--red">Error Text</p>
+
                 </label>
                 <span class="global-label__span">Error Message</span>
               </li>
               <li class="textfields__item">
-                <label class="textfield-label">
-                  <input type="text" class="textfield textfield-first textfield-first--disabled" required>
-                  <span class="textfield__placeholder">Label</span>
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+
                 </label>
                 <span class="global-label__span">Disabled</span>
               </li>
             </ul>
           </div>
+
+          <div class="textfields__wrap">
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+
+            </ul>
+          </div>
+
+<!-- TODO -->
+
+          <div class="textfields__wrap textfields__wrap-2">
+            <ul class="textfields__list-uni">
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                    <p class="textfield-select__helper">Please select your currency</p>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-multiline">
+                  <label class="textfield-label">
+                    <textarea type="text" class="textfield textfield-textarea"
+                    required>Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                    <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                  </label>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Adornment</span>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <!-- textfield fill -->
+
+          <div class="textfield-fill">
+            <p class="global-label">Filled</p>
+            <div class="textfields__wrap">
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <span class="global-label__span">Inactive</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Focused</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--focused textfield-filled" required value="Helper text">
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Activated</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+              </ul>
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--hovered textfield-filled" required>
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                  <span class="global-label__span">Hover</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--error textfield-filled" required value="Input text">
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Error message</p>
+                    <div class="icon-fail"></div>
+                  </label>
+                  <span class="global-label__span">Error Message</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label disabled">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                  <span class="global-label__span">Disabled</span>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="textfields__wrap">
+              <ul class="textfields__list-2">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <div class="icon-star"></div>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="textfields__wrap textfields__wrap-2">
+              <ul class="textfields__list-uni">
+                <li class="textfields__item">
+                  <div class="textfield-select">
+                    <ul class="textfield-select__header">
+                      <li class="textfield-select__header-item">
+                        <div class="default-value default-value--filled">$</div>
+                        <span class="textfield-select__placeholder">Select-text</span>
+                      </li>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </ul>
+                    <ul class="textfield-select__body">
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">tg</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">rub</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">$</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="textfields__item">
+                  <div class="textfield-multiline">
+                    <label class="textfield-label">
+                      <textarea type="text" class="textfield textfield-textarea textfield-textarea--filled"
+                        required="">Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                      <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <!-- ../Text Field filled -->
+
+
+          <!-- Text Field Adornments -->
+
+          <p class="global-label">Text Field Adornments</p>
+          <div class="textfields__wrap">
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="Kg">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value default-value--filled transparent-bgc">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="$">
+                  <span class="textfield__placeholder">Amount</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required>
+                  <span class="textfield__end-helper">Kg</span>
+                </label>
+                <p class="textfield__helper">weight</p>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="password" class="textfield textfield-first" required>
+                  <span class="textfield__placeholder">Password</span>
+                  <div class="icon-eye"></div>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <div class="icon-login"></div>
+                  <input type="text" class="textfield textfield-first textfield__start-icon" required value="csc">
+                  <span class="textfield__placeholder">With a start adornment</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <div class="icon-login"></div>
+                  <input type="text" class="textfield textfield-first textfield__start-icon" required value="With a grid">
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <p class="global-label">Outlined Input Adornments</p>
+          <ul class="textfields__list-2">
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required value="Kg">
+                <span class="textfield__placeholder textfield__placeholder--outlined">With outlined TextField</span>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <div class="textfield-select">
+                <ul class="textfield-select__header">
+                  <li class="textfield-select__header-item">
+                    <div class="default-value">Kg</div>
+                    <span class="textfield-select__placeholder">With Select</span>
+                  </li>
+                </ul>
+                <ul class="textfield-select__body">
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">tg</span>
+                  </li>
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">rub</span>
+                  </li>
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">$</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required value="$">
+                <span class="textfield__placeholder textfield__placeholder--outlined">Amount</span>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required>
+                <span class="textfield__placeholder textfield__placeholder--outlined">Weight</span>
+                <span class="textfield__end-helper end-helper-2">Kg</span>
+                <p class="textfield__helper">Helper text</p>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="password" class="textfield textfield-second textfield-second--adornment" required>
+                <span class="textfield__placeholder textfield__placeholder--outlined">Password</span>
+                <div class="icon-eye"></div>
+              </label>
+            </li>
+          </ul>
+
+
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="Kg">
+                  <span class="textfield__placeholder">With filled TextField</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value default-value--filled transparent-bgc">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Amount</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Weight</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Password</span>
+                </label>
+              </li>
+            </ul>
+          <!-- ../Text Field Adornments -->
+
         </div>
 
       <!-- ../Text Field -->
@@ -1545,7 +1950,23 @@
 
       <!-- ../Simple snackbar -->
 
+      <!-- Horizontal Linear -->
+
+      <div class="horizotal-linear">
+        <p class="global-label">Horizontal Linear</p>
+        <span class="global-label__span">Material UI</span>
+
+        <ul class="progressbar__list">
+          <li class="progressbar__item"></li>
+          <li class="progressbar__item"></li>
+          <li class="progressbar__item"></li>
+        </ul>
+      </div>
+
+      <!-- ../Horizontal Linear -->
+
     </div>
+
 
     <!-- ../container -->
 
