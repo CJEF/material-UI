@@ -65,6 +65,7 @@
     &-sorting__body {
         .table {
             box-shadow: none;
+            min-width: 1029px;
         }
         th:first-child, td:first-child {
             min-width: max-content;

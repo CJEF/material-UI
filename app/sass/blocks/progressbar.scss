@@ -1,14 +1,146 @@
 .progressbar {
+    margin-bottom: 10px;
+    &__list {
+        padding: 32px 24px;
+        background-color: #fff;
+        counter-reset: progressbar; 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 1px;
+            @include vertical-centering;
+            right: -325px;
+            background-color: rgba(0,0,0,0.12);
+        }
+        &:last-child:after {
+            display: none;
+        }
+        &-circle {
+            width: 24px;
+            height: 24px;
+            background-color: $blue;
+            color: white;
+            border-radius: 12px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                counter-increment: progressbar;
+                content: counter(progressbar);
+            }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            margin-left: 8px;
+        }
+        &-title {
+            color: $black-dark;
+            font-size: 14px;
+        }
+        &-hint {
+            color: $black-medium;
+            font-size: 12px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 65px;
+        button {
+            margin-right: 8px;
+        }
+    }
+}
+.slider {
+    max-width: 400px;
+    &__title {
+        background-color: #fff;
+        padding: 16px 32px 18px;
+    }
+    &__footer {
+        position: relative;
+        max-width: 400px;
+        background-color: #fff;
+        padding: 20px 24px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__stepper {
+        position: relative;
+        max-width: 400px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 23px 24px;
+        .prev, .next {
+            top: 22px;
+        }
+    }
+}
+.slick {
+    &-prev,
+    &-next {
+        position: absolute;
+        font-size: 13px;
+        color: $black-dark;
+        text-transform: uppercase;
+    }
+    &-arrow {
+        cursor: pointer;
+        padding: 8px 10px;
+        position: absolute;
+    }
+    &-prev {
+        left: 15px;
+        top: 10px;
+        cursor: pointer;
+        &:before {
+            transform: rotate(180deg);
+            margin-right: 10px;
+        }
+    }
+    &-next {
+        right: 15px;
+        top: 10px;
+    }
+    &-dots {
+        position: relative;
+        bottom: -1px;
+        display: flex;
+        justify-content: center;
+        li {
+            display: flex;
+            align-items: center;
+        }
+        li button {
+            font-size: 0;
+            width: 8px;
+            height: 8px;
+            background-color: $chips-before;
+            border-radius: 4px;
+            margin: 0 3px;
+        }
+        li.slick-active button{
+            background-color: $blue;
+        }
+    }
 
 }
 .slider__item {
-    width: 200px;
-    height: 200px;
-    background-color: orange;
-    &:nth-child(2) {
-        background-color: blue;
-    }
-    &:nth-child(3) {
-        background-color: green;
-    }
+    height: auto;
 }
