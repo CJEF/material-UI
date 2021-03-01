@@ -1873,6 +1873,17 @@
             </ul>
           <!-- ../Text Field Adornments -->
 
+          <!-- Date pickers -->
+
+          <p class="global-label">Date pickers</p>
+          <label class="textfield-label">
+            <input type="number" class="textfield textfield-first" required>
+            <span class="textfield__placeholder">Label</span>
+          </label>
+
+          <!-- ../Date pickers -->
+
+
         </div>
 
       <!-- ../Text Field -->
@@ -1916,7 +1927,7 @@
           </div>
         <div class="snackbar snackbar-customized--warning">
           <div class="snackbar__start">
-            <img src="./images/dest/icon-warning.svg" alt="">
+            <div class="icon-triangle-fail"></div>
             <span class="snackbar__span">This is a warning message!</span>
           </div>
           <div class="icon-cross"></div>
@@ -1930,7 +1941,7 @@
         </div>
         <div class="snackbar snackbar-customized--success">
           <div class="snackbar__start">
-            <img src="./images/dest/icon-success.svg" alt="">
+            <div class="icon-triangle-fail"></div>
             <span class="snackbar__span">This is a success message!</span>
           </div>
           <div class="icon-cross"></div>
@@ -1961,13 +1972,13 @@
         <div class="progressbar progressbar-horizontal">
           <ul class="progressbar__list">
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title">Select campaign settings</span>
               </div>
             </li>
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title">Create an ad group</span>
                 <span class="progressbar__item-hint">Optional</span>
@@ -1992,14 +2003,14 @@
         <div class="progressbar progressbar-horizontal">
           <ul class="progressbar__list">
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title classic-text">Select campaign settings
                 </span>
               </div>
             </li>
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title classic-text">Create an ad group</span>
                 <span class="progressbar__item-hint classic-text">Optional</span>
@@ -2025,52 +2036,18 @@
 
         <!-- alternative label -->
 
-
-        <span class="global-label__span">Materia-UI </span>
-        <div class="progressbar progressbar-horizontal">
-          <ul class="progressbar__list">
-            <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
-              <div class="progressbar__item-content">
-                <span class="progressbar__item-title">Select campaign settings
-                </span>
-              </div>
-            </li>
-            <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
-              <div class="progressbar__item-content">
-                <span class="progressbar__item-title">Create an ad group</span>
-                <span class="progressbar__item-hint">Optional</span>
-              </div>
-            </li>
-            <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
-              <div class="progressbar__item-content">
-                <span class="progressbar__item-title">Select campaign settings
-                </span>
-              </div>
-            </li>
-          </ul>
-          <p class="progressbar__helper classic-text">Step 2: What is an ad group anyways?</p>
-          <div class="progressbar__buttons">
-            <button class="basic-button basic-button--transparent classic-text">BACK</button>
-            <button class="basic-button basic-button--blue classic-text">SKIP</button>
-            <button class="basic-button basic-button--blue classic-text">NEXT</button>
-          </div>
-        </div>
-
         <span class="global-label__span">Classic</span>
-        <div class="progressbar progressbar-horizontal">
+        <div class="progressbar progressbar-horizontal progressbar-alternative">
           <ul class="progressbar__list">
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title classic-text">Select campaign settings
                 </span>
               </div>
             </li>
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title classic-text">Create an ad group</span>
                 <span class="progressbar__item-hint classic-text">Optional</span>
@@ -2084,7 +2061,7 @@
               </div>
             </li>
           </ul>
-          <p class="progressbar__helper classic-text">Step 2: What is an ad group anyways?</p>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
           <div class="progressbar__buttons">
             <button class="basic-button basic-button--transparent classic-text">BACK</button>
             <button class="basic-button basic-button--blue classic-text">SKIP</button>
@@ -2092,6 +2069,42 @@
             <button class="basic-button basic-button--blue classic-text">COMPLETE STEP</button>
           </div>
         </div>
+
+        <span class="global-label__span">Classic</span>
+        <div class="progressbar progressbar-horizontal progressbar-alternative">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent classic-text">BACK</button>
+            <button class="basic-button basic-button--blue classic-text">SKIP</button>
+            <button class="basic-button basic-button--blue classic-text">NEXT</button>
+            <button class="basic-button basic-button--blue classic-text">COMPLETE STEP</button>
+          </div>
+        </div>
+
+        <!-- ../alternative label -->
 
         <!-- Error step -->
 
@@ -2101,13 +2114,50 @@
         <div class="progressbar progressbar-horizontal">
           <ul class="progressbar__list">
             <li class="progressbar__item">
-              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title">Select campaign settings</span>
               </div>
             </li>
+            <li class="progressbar__item progressbar__item--error">
+              <div class="progressbar__item-circle icon-warning">
+                <img src="./images/dest/icon-warning.svg" alt="">
+              </div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
             <li class="progressbar__item">
               <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad</span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent">BACK</button>
+            <button class="basic-button basic-button--blue">SKIP</button>
+            <button class="basic-button basic-button--blue">NEXT</button>
+          </div>
+        </div>
+
+        <p class="global-label">Horizontal Non Linear - Error Step</p>
+        <span class="global-label__span">Classic</span>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+              </div>
+            </li>
+            <li class="progressbar__item progressbar__item--error">
+              <div class="progressbar__item-circle icon-warning">
+                <img src="./images/dest/icon-warning.svg" alt="">
+              </div>
               <div class="progressbar__item-content">
                 <span class="progressbar__item-title">Create an ad group</span>
                 <span class="progressbar__item-hint">Optional</span>
@@ -2136,11 +2186,100 @@
 
       <!-- Vertical Stepper -->
 
+      <p class="global-label">Vertical Stepper</p>
+      <span class="global-label__span">Material UI</span>
 
+      <div class="progressbar progressbar-vertical">
+        <ul class="progressbar__list progressbar__list--vertical">
+          <li class="progressbar__item progressbar__item-vertical progressbar__item-vertical--active">
+            <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+             <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+                <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which
+                networks and geographical locations you want your ads to show on, and more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent">BACK</button>
+                  <button class="basic-button basic-button--blue">NEXT</button>
+                </div>
+              </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+             <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent">BACK</button>
+                  <button class="basic-button basic-button--blue">NEXT</button>
+                </div>
+              </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+             <div class="progressbar__item-content">
+              <span class="progressbar__item-title">Create an ad</span>
+              <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent">BACK</button>
+                <button class="basic-button basic-button--blue">NEXT</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p class="global-label">Vertical Stepper</p>
+      <span class="global-label__span">Classic</span>
+
+      <div class="progressbar progressbar-vertical">
+        <ul class="progressbar__list progressbar__list--vertical">
+          <li class="progressbar__item progressbar__item-vertical progressbar__item-vertical--active">
+            <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Select campaign settings</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which
+                networks and geographical locations you want your ads to show on, and more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                <button class="basic-button basic-button--blue classic-text">NEXT</button>
+              </div>
+            </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Create an ad group</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and
+                more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                  <button class="basic-button basic-button--blue classic-text">NEXT</button>
+                </div>
+            </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Create an ad</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and
+                more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                <button class="basic-button basic-button--blue classic-text">NEXT</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
       <!-- ../Vertical Stepper -->
 
       <!-- slider -->
+
+      <p class="global-label">Mobile Stepper - Text with Carousel effect</p>
 
       <div class="slider" id="slick">
         <div class="slider__item">
@@ -2952,7 +3091,6 @@
 
   </main>
 
-<!-- TODO: add icons in icons fonts -->
   <script src="js/app.min.js"></script>
 </body>
 

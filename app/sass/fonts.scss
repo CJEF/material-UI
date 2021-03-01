@@ -63,6 +63,13 @@ font-face {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star-2:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-triangle-fail:before {
+  content: "\e921";
+}
 .icon-arrow:before {
   content: "\e900";
 }

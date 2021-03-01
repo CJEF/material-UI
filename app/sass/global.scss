@@ -106,6 +106,7 @@ textarea:focus {
 }
 
 .global-label__span {
+  display: inline-block;
   font-family: 'Roboto';
   color: rgba(0, 0, 0, 0.54);
   font-style: normal;
