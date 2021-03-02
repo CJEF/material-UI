@@ -98,6 +98,7 @@ textarea:focus {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .icon-mail {
@@ -120,4 +121,10 @@ textarea:focus {
   pointer-events: none;
   cursor: default;
   opacity: .4;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 20px 15px;
+  }
 }

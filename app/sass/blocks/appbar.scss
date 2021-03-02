@@ -121,3 +121,34 @@
 .appbar-wrap .appbar-wrap__icon.icon-notification .appbar-wrap__icon-badge {
   top: -9px;
 }
+
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 200px;
+  }
+  .appbar-wrap__link {
+    margin: 0 10px;
+  }
+  .appbar-wrap__icon {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .appbar-wrap__link {
+    font-size: 17px;
+  }
+  .appbar-wrap {
+    padding: 16.5px 13px 18.5px 11.5px;
+  }
+  .search-input {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 460px) {
+  .search-input,
+  .appbar-wrap__input {
+    display: none;
+  }
+}

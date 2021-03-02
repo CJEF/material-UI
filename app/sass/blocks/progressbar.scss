@@ -16,6 +16,7 @@
         }
     }
     &__item-vertical {
+
         .progressbar__item-title {
             margin: 5px 0 9px;
         }
@@ -44,9 +45,6 @@
             left: 100%;
             background-color: rgba(0,0,0,0.12);
             z-index: -5;
-        }
-        &:first-child:after {
-            padding-left: 0;
         }
         &:last-child:after {
             display: none;
@@ -104,10 +102,34 @@
         }
     }
     &-alternative {
-        .progressbar__item {
-            flex-direction: column;
+            .progressbar__item {
+                flex-direction: column;
+                z-index: inherit;
+                &:after {
+                    display: none;
+                }
+                &:last-child .progressbar__item-circle:after{
+                    display: none;
+                }
+                &:nth-child(2) .progressbar__item-circle:after{
+                    width: 233%;
+                    left: 65%;
+                }
+                &-title {
+                    margin-top: 10px;
+                }
+            }
+            .progressbar__item-circle:after {
+                content: '';
+                position: absolute;
+                width: 188%;
+                left: 60%;
+                height: 1px;
+                top: 10px;
+                background-color: rgba(0,0,0,0.12);
+                z-index: 2;
+            }
         }
-    }
     &__item-vertical.progressbar__item:after {
         height: 25px;
         width: 1px;
@@ -210,4 +232,30 @@
 .slider__item {
     height: auto;
     max-height: 312px;
+}
+
+/* ================================ MEDIA ======================== */
+
+@media (max-width: 1024px) {
+    .progressbar__item::after {
+        width: 110%;
+    }
+    .progressbar-alternative .progressbar__item:nth-child(2) .progressbar__item-circle:after {
+        width: 150%;
+    }
+}
+
+@media (max-width: 768px) {
+    .progressbar__item::after {
+        width: 50%;
+    }
+    .progressbar-alternative .progressbar__item:nth-child(2) .progressbar__item-circle:after {
+        width: 150%;
+    }
+}
+
+@media (max-width: 425px) {
+    .progressbar__item::after {
+        display: none;
+    }
 }

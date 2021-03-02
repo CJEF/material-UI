@@ -2,6 +2,8 @@
     background-color: #fff;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
     border-spacing: 0;
+    overflow-x: auto;
+    display: table;
     th {
         color: $black-medium;
         font-size: 12px;
@@ -30,6 +32,9 @@
     &-sorting {
         max-width: 1029px;
         margin: 10px 0 20px;
+        &__body {
+            overflow-x: auto;
+        }
         &--classic {
            th:first-child, td:first-child {
                 padding: 20px 19px;
@@ -131,5 +136,48 @@
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-top: 5px solid $black-medium;
+    }
+}
+
+/* =============================@MEDIA =============================== */
+
+@media (max-width: 1440px) {
+    .grid-list-7 {
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .table td:first-child {
+        min-width: 135px;
+    }
+    .table td, .table th {
+        padding: 14px 17px;
+    }
+    .table-sorting__body td:nth-child(2), .table-sorting__body th:nth-child(2) {
+        min-width: 170px;
+    }
+    .table-sorting__body td {
+    min-width: 55px;
+    }
+    .table-sorting__header {
+        padding: 14px 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-sorting__body td:nth-child(2), .table-sorting__body th:nth-child(2) {
+        max-width: 100px;
+    }
+    .table-sorting__body .table {
+        min-width: fit-content;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .table {
+        flex-direction: column;
+        display: flex;
     }
 }

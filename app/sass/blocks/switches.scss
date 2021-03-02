@@ -1,6 +1,7 @@
 .switches {
     &__list {
         display: flex;
+        flex-wrap: wrap;
     }
     &__item {
         margin-right: 20px;

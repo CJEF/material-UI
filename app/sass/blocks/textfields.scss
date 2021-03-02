@@ -13,6 +13,7 @@
     }
     &__wrap {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         &-2 {
             margin-top: 50px;
@@ -36,6 +37,7 @@
     }
     &__list-uni {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         .textfields__item {
             margin-right: 20px;
@@ -56,11 +58,18 @@
     transition: background-size 0.3s ease;
     line-height: 14px;
 
+
+
+    &:focus::placeholder {
+        // db
+    }
+
     &-label {
         position: relative;
         display: flex;
         align-items: center;
         flex-direction: column;
+        max-width: max-content;
         .icon-like-2,
         .icon-fail,
         .icon-star,
@@ -297,7 +306,7 @@
             display: none;
             position: absolute;
             width: 100%;
-            background-color: #ccc;
+            background-color: #fff;
             overflow: hidden;
             border-radius: 4px;
             top: 64px;
@@ -362,6 +371,9 @@
         &:valid ~ .textfield__placeholder {
             top: 5px;
         }
+        &--error ~ .textfield__helper {
+            color: $error-input;
+        }
     }
     &-filled ~ &__placeholder {
         padding-left: 12px;
@@ -417,3 +429,41 @@
 
     /* ../adornments */
 }
+
+/* datepicker */
+
+.datepicker {
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .textfield-label:first-child {
+            margin-right: 50px;
+        }
+    }
+    &-wrapper-2 {
+        display: flex;
+        margin-bottom: 50px;
+        .textfield-label:first-child {
+            margin-right: 15px;
+        }
+    }
+}
+
+.textfield-time {
+    max-width: 85px;
+    padding: 18px 0 15px;
+}
+
+input[time] {
+    &::placeholder {
+        display: none;
+    }
+    &:focus::placeholder {
+        display: block;
+    }
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+/* ../datepicker */

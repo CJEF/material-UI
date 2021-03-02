@@ -126,6 +126,7 @@
 .buttons {
     &__list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         margin-bottom: 25px;
         &--withTab {
@@ -143,6 +144,7 @@
     }
     .size {
         display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -317,3 +319,14 @@
 }
 
 /* ../buttons__states */
+
+/* =================================== MEDIA ============================ */
+
+@media (max-width: 630px) {
+    .buttons__states {
+        flex-wrap: wrap;
+    }
+    .size .buttons__item {
+        flex-wrap: wrap;
+    }
+}

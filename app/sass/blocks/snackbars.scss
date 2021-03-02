@@ -2,6 +2,7 @@
 
     &__top {
         display: flex;
+        flex-wrap: wrap;
     justify-self: space-between;
     }
 }

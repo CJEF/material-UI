@@ -84,7 +84,7 @@
           </div>
           <div class="appbar-wrap__right">
             <div class="appbar-wrap__input icon-search">
-              <input type="text" class="search-input" placeholder="Search...">
+              <input type="text" class="search-input search-input__small" placeholder="Search...">
             </div>
           </div>
         </div>
@@ -1876,10 +1876,50 @@
           <!-- Date pickers -->
 
           <p class="global-label">Date pickers</p>
-          <label class="textfield-label">
-            <input type="number" class="textfield textfield-first" required>
-            <span class="textfield__placeholder">Label</span>
-          </label>
+          <div class="datepicker-wrapper">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.1990">
+              <span class="textfield__placeholder">Birthday</span>
+            </label>
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.1990">
+              <span class="textfield__placeholder">Birthday</span>
+            </label>
+          </div>
+
+          <p class="global-label">Date & Time pickers</p>
+          <div class="datepicker-wrapper">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">Next appointment</span>
+            </label>
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">Next appointment</span>
+            </label>
+          </div>
+
+          <p class="global-label">Date & Time pickers</p>
+          <div class="datepicker-wrapper-2">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">From</span>
+            </label>
+            <label class="textfield-label">
+              <input type="time" class="textfield textfield-first textfield-time" required value="10:30">
+              <span class="textfield__placeholder">Time</span>
+            </label>
+          </div>
+          <div class="datepicker-wrapper-2">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first" required value="24.05.2019 10:30" placeholder="End Date">
+              <span class="textfield__placeholder">To</span>
+            </label>
+            <label class="textfield-label">
+              <input type="time" class="textfield textfield-first textfield-time" required value="10:30">
+              <span class="textfield__placeholder">Time</span>
+            </label>
+          </div>
 
           <!-- ../Date pickers -->
 
@@ -2722,7 +2762,7 @@
       <!-- Spanning Table -->
 
       <p class="global-label">Spanning Table</p>
-      <table class="table">
+      <table class="table table-error">
         <thead>
           <tr>
             <th>Desc</th>
@@ -2830,6 +2870,7 @@
 
       <!-- grid-lists -->
 
+
       <p class="global-label">Image-only Grid list</p>
       <div class="grid-lists-1">
 
@@ -2898,85 +2939,91 @@
       </div>
       <!-- ../grid-lists -->
 
-      <p class="global-label">Grid list with titlebars</p>
-      <div class="grid-lists-2">
-        <ul class="grid-list-titlebar">
-          <h3 class="grid-list-titlebar__top">February</h3>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Silhouette</h3>
-              <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-2.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Orchid</h3>
-              <p class="grid-list-titlebar__by">by: user11</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-3.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Tulip Field</h3>
-              <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-4.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Butterfly</h3>
-              <p class="grid-list-titlebar__by">by: photographer</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Silhouette</h3>
-              <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-          <li class="grid-list-titlebar__item">
-            <img src="./images/dest/gallery/titlebar-5.jpg" alt="">
-            <div class="grid-list-titlebar__content">
-              <h3 class="grid-list-titlebar__title">Orchid</h3>
-              <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
-              <div class="icon-fail"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <div class="grid-lists-wrapper-main">
+        <div class="grid-lists-wrapper">
+          <p class="global-label">Grid list with titlebars</p>
+          <div class="grid-lists-2">
+            <ul class="grid-list-titlebar">
+              <h3 class="grid-list-titlebar__top">February</h3>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Silhouette</h3>
+                  <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-2.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Orchid</h3>
+                  <p class="grid-list-titlebar__by">by: user11</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-3.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Tulip Field</h3>
+                  <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-4.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Butterfly</h3>
+                  <p class="grid-list-titlebar__by">by: photographer</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Silhouette</h3>
+                  <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-5.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Orchid</h3>
+                  <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <p class="global-label">Advanced Grid list</p>
-      <ul class="grid-list-advanced">
-        <li class="grid-list-advanced__item">
-          <img src="./images/dest/gallery/advanced-1.jpg" alt="">
-          <div class="grid-list-advanced__content">
-            <div class="icon-star"></div>
-            <span class="grid-list-advanced__span">Silhouette</span>
-          </div>
-        </li>
-        <li class="grid-list-advanced__item">
-          <img src="./images/dest/gallery/advanced-2.jpg" alt="">
-          <div class="grid-list-advanced__content">
-            <div class="icon-star"></div>
-            <span class="grid-list-advanced__span">Tulip Field</span>
-          </div>
-        </li>
-        <li class="grid-list-advanced__item">
-          <img src="./images/dest/gallery/advanced-3.jpg" alt="">
-          <div class="grid-list-advanced__content">
-            <div class="icon-star"></div>
-            <span class="grid-list-advanced__span">Butterfly</span>
-          </div>
-        </li>
-      </ul>
+        <div class="grid-lists-wrapper">
+          <p class="global-label">Advanced Grid list</p>
+          <ul class="grid-list-advanced">
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-1.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Silhouette</span>
+              </div>
+            </li>
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-2.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Tulip Field</span>
+              </div>
+            </li>
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-3.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Butterfly</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <p class="global-label">Single line Grid list</p>
       <ul class="grid-list-single">
