@@ -1,0 +1,121 @@
+.switches {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-right: 20px;
+    }
+}
+
+.switches-input {
+    position: relative;
+    appearance: none;
+    width: 34px;
+    height: 14px;
+    opacity: .5;
+    background-color:$black-light;
+    border-radius: 6px;
+    cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+        background-color: white;
+        transform: scale(1.4);
+        transition: .2s ease-in-out;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    }
+    &:checked:before {
+            left: 18px;
+            background-color: white;
+    }
+    &:checked {
+        background-color: #A8A8A8;
+    }
+
+    &--blue, &--pink {
+        background-color: $black-light;
+        transition: .2s ease-in-out;
+    }
+
+    &--blue:checked {
+        opacity: 1;
+        background-color: $blue-medium;
+        &:before {
+            left: 17px;
+            background-color: $blue;
+            opacity: 1;
+        }
+    }
+    &--pink:checked {
+        opacity: 1;
+        background-color: $pink-medium;
+        &:before {
+            left: 17px;
+            background-color: $pink;
+        }
+    }
+    &--uncontrolled {
+        &:checked:before {
+            left: 17px;
+            background-color: black;
+        }
+    }
+    &--dis {
+        cursor: default;
+        &:before {
+            background-color:  #BDBDBD;
+        }
+        &:checked:before {
+            background-color:  #BDBDBD;
+        }
+    }
+    &--with-margin {
+        margin-right: 15px;
+    }
+}
+
+.lable-placement {
+    display: flex;
+    align-items: center;
+    .radiobuttons__label {
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        &--top{
+            flex-direction: column;
+            input {
+                margin: 20px 0 0;
+            }
+        }
+        &--start{
+            input {
+                margin: 0 0 0 10px;
+            }
+        }
+        &--bottom{
+            flex-direction: column;
+            input {
+                margin: 0 0 20px;
+            }
+        }
+        &--end{
+            input {
+                margin: 0 10px 0;
+            }
+        }
+    }
+}
+
+/* ========================== MEDIA ======================= */
+
+@media (max-width: 768px) {
+    .switches__item {
+        margin-bottom: 15px;
+    }
+}

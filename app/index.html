@@ -1,0 +1,3144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/app.min.css" />
+  <title>UI</title>
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <div class="appbar">
+        <!-- appbar -->
+        <div class="global-label">
+          <span>App Bar with buttons</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="burger">
+            <a href="#" class="icon-menu"></a>
+          </div>
+          <a href="#" class="appbar-wrap__link">News</a>
+          <a href="#" class="login">LOGIN</a>
+        </div>
+
+        <div class="global-label">
+          <span>Simple App Bar</span>
+        </div>
+        <div class="appbar-wrap appbar-wrap--white">
+          <a href="#" class="appbar-wrap__link">Photos</a>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with a primary search field</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Material-UI</a>
+            <div class="appbar-wrap__input icon-search">
+              <input type="text" class="search-input" placeholder="Search...">
+            </div>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-mail">
+              <span class="appbar-wrap__icon-badge">4</span>
+            </a>
+            <a href="#" class="appbar-wrap__icon icon-notification">
+              <span class="appbar-wrap__icon-badge">17</span>
+            </a>
+            <a href="#" class="appbar-wrap__icon icon-login">
+            </a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with menu</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Photos</a>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-login"></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>App Bar with search field</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+            <a href="#" class="appbar-wrap__link">Material-UI</a>
+          </div>
+          <div class="appbar-wrap__right">
+            <div class="appbar-wrap__input icon-search">
+              <input type="text" class="search-input search-input__small" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Dense (desktop only)</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="burger">
+            <a href="#" class="icon-menu"></a>
+          </div>
+          <a href="#" class="appbar-wrap__link">Photos</a>
+        </div>
+
+        <div class="global-label">
+          <span>Bottom App Bar</span>
+        </div>
+        <div class="appbar-wrap">
+          <div class="appbar-wrap__left">
+            <div class="burger">
+              <a href="#" class="icon-menu"></a>
+            </div>
+          </div>
+          <div class="appbar-wrap__right">
+            <a href="#" class="appbar-wrap__icon icon-search"></a>
+            <a href="#" class="appbar-wrap__icon icon-dots"></a>
+          </div>
+          <a href="#" class="appbar-wrap__add-button icon-plus"></a>
+        </div>
+      </div> <!-- ../appbar -->
+
+      <!-- Tabs -->
+
+<!-- TODO: переделать табы -->
+
+      <div class="tabs">
+        <div class="global-label">
+          <span>Simple Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>Item one</span></a>
+            <a href="#" class="tab__header-item"><span>Item two</span></a>
+            <a href="#" class="tab__header-item"><span>Item three</span></a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Wrapped Labels</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>NEW ARRIVALS IN THE LONGEST
+                TEXT OF NINFICTION</span></a>
+            <a href="#" class="tab__header-item"><span>Item two</span></a>
+            <a href="#" class="tab__header-item"><span>Item three</span></a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Disabled Tab</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white tab__header--white-disabled">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>ACTIVE</span></a>
+            <a href="#" class="tab__header-item tab__header-item--disabled"><span>DISABLED</span></a>
+            <a href="#" class="tab__header-item"><span>ACTIVE</span></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Centered Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active"><span>item one</span></a>
+            <a href="#" class="tab__header-item"><span>item two</span></a>
+            <a href="#" class="tab__header-item"><span>item three</span></a>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Icon (+Text) Tabs +Forced Scroll Buttons</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active">
+              <span class="icon-phone"></span>
+              <span>ITEM ONE</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-like"></span>
+              <span>ITEM TWO</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-login"></span>
+              <span>Item three</span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-help"></span>
+              <span>Item four</span>
+            </a>
+            <div class="tab__header-right">
+              <a href="#" class="icon-arrow"></a>
+            </div>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+            <div class="tab__content-item">item four</div>
+          </div>
+        </div>
+
+        <div class="global-label">
+          <span>Icon Tabs</span>
+        </div>
+        <div class="tab">
+          <div class="tab__header--white">
+            <a href="#" class="tab__header-item tab__header-item--active">
+              <span class="icon-phone"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-like"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-login"></span>
+            </a>
+            <a href="#" class="tab__header-item">
+              <span class="icon-help"></span>
+            </a>
+          </div>
+          <div class="tab__content">
+            <div class="tab__content-item tab__content-item--active">item one</div>
+            <div class="tab__content-item">item two</div>
+            <div class="tab__content-item">item three</div>
+            <div class="tab__content-item">item four</div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ../Tabs -->
+
+      <!-- Badges -->
+      <div class="badges">
+        <div class="global-label">
+          <span>Simple Badges</span>
+        </div>
+        <div class="row badges__row">
+          <ul class="badges-mail__list">
+            <li class="badges-mail__icon">
+              <div class="badges-mail--blue badges-main">
+                <button class="icon-mail"></button>
+                <span class="badges__span-badge">4</span>
+              </div>
+            </li>
+            <li class="badges-mail__icon">
+              <div class="badges-mail--pink badges-main">
+                <button class="icon-mail"></button>
+                <span class="badges__span-badge">10</span>
+              </div>
+            </li>
+            <li class="badges-mail__icon">
+              <div class="badges-mail--dis badges-main">
+                <button class="icon-mail"></button>
+                <span class="badges__span-badge">4</span>
+              </div>
+            </li>
+          </ul>
+          <div class="badges-typography">
+            <p class="badges-typography__item">
+              Typography
+              <span class="badges__span-badge badges-typo__span">4</span>
+            </p>
+          </div>
+          <div class="badges-button">
+            <button class="badges-button__item">
+              button
+              <span class="badges__span-badge badges-button__span">4</span>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+
+<!-- TODO: переделать табы -->
+
+          <div class="tab">
+              <div class="tab__header">
+                <a href="#" class="tab__header-item tab__header-item--active"><span>one</span><span class="badges__span-badge badges__tab-badge">4</span></a>
+                <a href="#" class="tab__header-item"><span>two</span></a>
+                <a href="#" class="tab__header-item"><span>three</span></a>
+                <a href="#" class="tab__header-item"><span>four</span></a>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="maximum-value">
+            <div class="global-label">
+              <span>Maximum Value</span>
+            </div>
+            <div class="maximum-value__buttons">
+              <ul class="maximum-value__list">
+                <li>
+                  <div class="maximum-value__item">
+                    <button class="icon-mail">
+                    </button>
+                    <span class="badges__span-badge">99</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="maximum-value__item">
+                    <button class="icon-mail">
+                    </button>
+                    <span class="badges__span-badge">99+</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="maximum-value__item">
+                    <button class="icon-mail">
+                    </button>
+                    <span class="badges__span-badge">999+</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dot-badge">
+            <div class="global-label">
+              <span>Dot Badge</span>
+            </div>
+            <ul class="dot-badge__list">
+              <li class="dot-badge__item">
+                <div class="dot-badge__button">
+                  <button class="icon-mail">
+                  </button>
+                  <span class="dot-badge__span"></span>
+                </div>
+              </li>
+              <li class="dot-badge__item">
+                <div class="dot-badge__button">
+                  <button class="icon-mail">
+                  </button>
+                  <span class="dot-badge__span"></span>
+                </div>
+              </li>
+              <li class="dot-badge__item">
+                <div class="dot-badge__typography">
+                  <p class="typography">
+                    Typography
+                  </p>
+                  <span class="dot-badge__span dot-badge__typography-span"></span>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- ../Badges -->
+
+      <!-- Chips -->
+
+<!-- * Посмотреть отступы где внешние а где внутренние? -->
+
+      <div class="chips">
+        <div class="chips__contained">
+          <div class="global-label">
+            <span>Contained chips</span>
+          </div>
+          <div class="chips__block">
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-basic">
+                  <span class="chips__item-span">Basic Chip</span>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-clickable">
+                  <div class="chips__item-before"><p>MB</p></div>
+                  <span class="chips__item-span">Clickable Chip</span>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-deletable">
+                  <div class="chips__item-before">
+                    <img src="images/dest/cat.jpg" alt="cat">
+                  </div>
+                  <span class="chips__item-span">Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-click-deletable">
+                  <div class="chips__item-before ">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Clickable Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-click-deletable">
+                  <div class="chips__item-before ">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Clickable Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-deletable">
+                  <span class="chips__item-span">Custom delete icon Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray chips__item-clickable">
+                  <span class="chips__item-span">Clickable Link Chip</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue chips__item-clickable">
+                  <div class="chips__item-before">
+                    <p>MB</p>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue">
+                  <span class="chips__item-span">Deletable Primary Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--pink chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--pink chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chips__outlined">
+          <div class="global-label">
+            <span>Outlined Chips</span>
+          </div>
+          <div class="chips__block">
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-basic">
+                  <span class="chips__item-span">Basic Chip</span>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-clickable">
+                  <div class="chips__item-before">
+                    <p>MB</p>
+                  </div>
+                  <span class="chips__item-span">Clickable Chip</span>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-deletable">
+                  <div class="chips__item-before">
+                    <img src="images/dest/cat.jpg" alt="cat">
+                  </div>
+                  <span class="chips__item-span">Deletable Chip</span>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-click-deletable">
+                  <div class="chips__item-before ">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Clickable Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-click-deletable">
+                  <div class="chips__item-before ">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Clickable Deletable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-deletable">
+                  <span class="chips__item-span">Custom delete icon Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--gray basic-chip--gray_outline chips__item-clickable">
+                  <span class="chips__item-span">Clickable Link Chip</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue basic-chip--blue_outline chips__item-clickable">
+                  <div class="chips__item-before">
+                    <p>MB</p>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue basic-chip--blue_outline chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-done"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--blue basic-chip--blue_outline">
+                  <span class="chips__item-span">Deletable Primary Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+            <ul class="row chips__list">
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--pink basic-chip--pink_outline chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__item">
+                <div class="basic-chip basic-chip--pink basic-chip--pink_outline chips__item-clickable">
+                  <div class="chips__item-before">
+                    <div class="icon-sticker"></div>
+                  </div>
+                  <span class="chips__item-span">Primary Clickable Chip</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="chips__array">
+          <div class="global-label">Chip array</div>
+          <div class="chips-block">
+            <ul class="chips__array-list">
+              <li class="chips__array-item">
+                <div class="chips__array-chip basic-chip basic-chip--gray">
+                  <span class="chips__item-span">Angular</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__array-item">
+                <div class="chips__array-chip basic-chip basic-chip--gray">
+                  <span class="chips__item-span">Jquery</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__array-item">
+                <div class="chips__array-chip basic-chip basic-chip--gray">
+                  <span class="chips__item-span">Polymer</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__array-item">
+                <div class="chips__array-chip basic-chip basic-chip--gray">
+                  <span class="chips__item-span">React</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+              <li class="chips__array-item">
+                <div class="chips__array-chip basic-chip basic-chip--gray">
+                  <span class="chips__item-span">Vue.js</span>
+                  <div class="chips__item-after icon-close"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ../Chips -->
+
+      <!-- Buttons -->
+
+      <div class="buttons">
+
+        <!-- Contained Button -->
+
+        <p class="global-label">Contained Buttons</p>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button">UPLOAD</a>
+          </li>
+        </ul>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button classic-text">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue classic-text">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink classic-text">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis classic-text">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button classic-text">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button classic-text">UPLOAD</a>
+          </li>
+        </ul>
+
+        <!-- ../Contained Button -->
+
+        <!-- Text Buttons -->
+
+        <p class="global-label">Text Buttons</p>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button basic-button--transparent">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue basic-button--transparent">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink basic-button--transparent">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis basic-button--transparent">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button basic-button--transparent">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button basic-button--transparent">UPLOAD</a>
+          </li>
+        </ul>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button classic-text basic-button--transparent">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button classic-text basic-button--transparent basic-button--blue">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button classic-text basic-button--transparent basic-button--pink">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis classic-text basic-button--transparent">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button classic-text basic-button--transparent">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button classic-text basic-button--transparent">UPLOAD</a>
+          </li>
+        </ul>
+
+        <!-- ../Text Buttons -->
+
+        <!-- Outlined Buttons -->
+
+        <p class="global-label">Outlined Buttons</p>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button basic-button--outlined">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue basic-button--outlined">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink basic-button--outlined">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis basic-button--outlined">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button basic-button--outlined">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button basic-button--outlined">UPLOAD</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt"
+              class="basic-button classic-text basic-button--outlined basic-button--inherit">INHERIT</a>
+          </li>
+        </ul>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button classic-text basic-button--outlined">DEFAULT</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue classic-text basic-button--outlined">PRIMARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink classic-text basic-button--outlined">SECONDARY</button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis classic-text basic-button--outlined">DISABLED</button>
+          </li>
+          <li class="buttons__item">
+            <a href="/" class="basic-button classic-text basic-button--outlined">LINK</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt" class="basic-button classic-text basic-button--outlined">UPLOAD</a>
+          </li>
+          <li class="buttons__item">
+            <a href="./filestorage/text.txt"
+              class="basic-button classic-text basic-button--outlined basic-button--inherit">INHERIT</a>
+          </li>
+        </ul>
+
+        <!-- ../Outlined Buttons -->
+
+        <!-- Floating Action Buttons -->
+
+        <p class="global-label">Floating Action Buttons</p>
+        <ul class="buttons__list buttons__list--withTab">
+          <li class="buttons__item">
+            <button class="button-round button-round--blue">
+              <div class="icon-plus"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="button-round button-round--pink">
+              <div class="icon-pen"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="button-round--text">
+              <div class="icon-extended"></div>
+              <span>EXTEND</span>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="button-round">
+              <div class="icon-delete"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <div class="tab">
+              <div class="tab__header--white">
+                <a href="#" class="tab__header-item"><span>item one</span></a>
+                <a href="#" class="tab__header-item"><span>item two</span></a>
+                <a href="#" class="tab__header-item tab__header-item--active"><span>item three</span></a>
+              </div>
+              <div class="tab__content">
+                <div class="tab__content-item tab__content-item--active">item one</div>
+                <div class="tab__content-item">item two</div>
+                <div class="tab__content-item">item three</div>
+              </div>
+              <div class="button-round button-round--blue button-round--absolute">
+                <div class="icon-plus"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- ../Floating Action Buttons -->
+
+        <!-- Size -->
+
+<!-- TODO: при изменении --псевдокласса изменять размер иконок -->
+
+        <p class="global-label">Sizes</p>
+        <div class="size">
+          <ul class="buttons__list">
+            <span class="global-label__span">Materia-UI</span>
+            <li class="buttons__item">
+              <button class="basic-button basic-button--blue basic-button--outlined basic-button--small">SMALL</button>
+              <button class="basic-button basic-button--blue basic-button--outlined basic-button--medium">MEDIUM</button>
+              <button class="basic-button basic-button--blue basic-button--outlined basic-button--large">LARGE</button>
+            </li>
+            <li class="buttons__item">
+              <button class="basic-button basic-button--blue basic-button--small">SMALL</button>
+              <button class="basic-button basic-button--blue basic-button--medium">MEDIUM</button>
+              <button class="basic-button basic-button--blue basic-button--large">LARGE</button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-round button-round--pink button-round--small">
+                <div class="icon-plus"></div>
+              </button>
+              <button class="button-round button-round--pink button-round--medium">
+                <div class="icon-plus"></div>
+              </button>
+              <button class="button-round button-round--pink button-round--large">
+                <div class="icon-plus"></div>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-round--text button-round--text_blue button-round--text_small">
+                <div class="icon-extended"></div>
+                <span>EXTEND</span>
+              </button>
+              <button class="button-round--text button-round--text_blue button-round--text_medium">
+                <div class="icon-extended"></div>
+                <span>EXTEND</span>
+              </button>
+              <button class="button-round--text button-round--text_blue button-round--text_large">
+                <div class="icon-extended"></div>
+                <span>EXTEND</span>
+              </button>
+            </li>
+            <li class="buttons__item">
+              <div class="icon-local icon-local--small"></div>
+              <div class="icon-local icon-local--medium"></div>
+              <div class="icon-local icon-local--large"></div>
+            </li>
+          </ul>
+
+
+          <ul class="buttons__list">
+            <span class="global-label__span">Classic</span>
+            <li class="buttons__item">
+              <button class="basic-button basic-button--blue classic-text basic-button--outlined basic-button--small">SMALL</button>
+              <button class="basic-button basic-button--blue classic-text basic-button--outlined basic-button--medium">MEDIUM</button>
+              <button class="basic-button basic-button--blue classic-text basic-button--outlined basic-button--large">LARGE</button>
+            </li>
+            <li class="buttons__item">
+              <button class="basic-button basic-button--blue classic-text basic-button--small">SMALL</button>
+              <button class="basic-button basic-button--blue classic-text basic-button--medium">MEDIUM</button>
+              <button class="basic-button basic-button--blue classic-text basic-button--large">LARGE</button>
+            </li>
+            <li class="buttons__item">
+              <button class="button-round--text button-round--text_blue button-round--text_small">
+                <div class="icon-extended"></div>
+                <span class="classic-text">EXTEND</span>
+              </button>
+              <button class="button-round--text button-round--text_blue button-round--text_medium">
+                <div class="icon-extended"></div>
+                <span class="classic-text">EXTEND</span>
+              </button>
+              <button class="button-round--text button-round--text_blue button-round--text_large">
+                <div class="icon-extended"></div>
+                <span class="classic-text">EXTEND</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ../Size -->
+
+        <!-- Icon-label buttons -->
+
+        <p class="global-label">Buttons with icons and label</p>
+
+        <div class="icon-span-buttons">
+        <ul class="buttons__list">
+          <span class="global-label__span">Material-UI</span>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink span-icon-button">
+              <span>DELETE</span>
+              <div class="icon-delete"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue span-icon-button">
+              <span>SEND</span>
+              <div class="icon-send"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button span-icon-button">
+              <span>UPLOAD</span>
+              <div class="icon-upload"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis icon-span-button">
+              <div class="icon-voice"></div>
+              <span>TALK</span>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button icon-span-button">
+              <div class="icon-save"></div>
+              <span>SAVE</span>
+            </button>
+          </li>
+        </ul>
+
+
+        <ul class="buttons__list">
+          <span class="global-label__span">Classic</span>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--pink span-icon-button">
+              <span class="classic-text">DELETE</span>
+              <div class="icon-delete"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue span-icon-button">
+              <span class="classic-text">SEND</span>
+              <div class="icon-send"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button span-icon-button">
+              <span class="classic-text">UPLOAD</span>
+              <div class="icon-upload"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis icon-span-button">
+              <div class="icon-voice"></div>
+              <span class="classic-text">TALK</span>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button icon-span-button">
+              <div class="icon-save"></div>
+              <span class="classic-text">SAVE</span>
+            </button>
+          </li>
+        </ul>
+
+        </div>
+
+        <!-- ../Icon-label buttons -->
+
+        <!-- Button states -->
+
+
+        <p class="global-label">Button states</p>
+        <div class="buttons__states">
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue">BUTTON</button>
+            <button class="basic-button basic-button--blue basic-button--transparent">BUTTON</button>
+            <span>Normal</span>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue basic-button--hovered">BUTTON</button>
+            <button class="basic-button basic-button--blue basic-button--transparent basic-button--hovered">BUTTON</button>
+            <span>Hover</span>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--blue">BUTTON</button>
+            <button class="basic-button basic-button--blue basic-button--transparent basic-button--pressed">BUTTON</button>
+            <span>Pressed</span>
+          </li>
+          <li class="buttons__item">
+            <button class="basic-button basic-button--dis">BUTTON</button>
+            <button class="basic-button basic-button--dis basic-button--transparent">BUTTON</button>
+            <span>Disabled</span>
+          </li>
+        </ul>
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="button-round button-round--pink button-round--large">
+              <div class="icon-plus"></div>
+            </button>
+            <span>Normal</span>
+          </li>
+          <li class="buttons__item">
+            <button class="button-round button-round--pink button-round--pressed button-round--large">
+              <div class="icon-plus"></div>
+            </button>
+            <span>Pressed</span>
+          </li>
+        </ul>
+      </div>
+
+        <!-- ../Button states -->
+
+      </div>
+
+      <!-- ../Buttons -->
+
+      <!-- Radiobuttons -->
+      <div class="radiobuttons">
+        <p class="global-label">Radio Buttons</p>
+        <div class="radiobuttons__gender radiobuttons__list-wrapper">
+          <ul class="radiobuttons__list">
+            <legend>Gender</legend>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Female</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Male</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+                <span>Other</span>
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink radiobuttons__input--dis" disabled>
+                <span>(Disabled)</span>
+              </label>
+            </li>
+          </ul>
+
+          <ul class="radiobuttons__list">
+            <legend>Gender</legend>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Female</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Male</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15">Other</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue">
+              </label>
+            </li>
+            <li class="radiobuttons__item">
+              <label class="radiobuttons__label">
+                <span class="mr-15 disabled-span">(Disabled)</span>
+                <input name="radio2" type="radio" class="radiobuttons__input radiobuttons__input--blue radiobuttons__input--dis" disabled>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="radiobuttons__state">
+          <label class="radiobuttons__label">
+            <input type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+          <label class="radiobuttons__label">
+            <input type="radio" class="radiobuttons__input radiobuttons__input--pink" checked>
+          </label>
+          <label class="radiobuttons__label">
+            <input type="radio" class="radiobuttons__input radiobuttons__input--pink">
+          </label>
+          <label class="radiobuttons__label">
+            <input type="radio" class="radiobuttons__input radiobuttons__input--pink" checked>
+          </label>
+        </div>
+      </div>
+      <!-- ../Radiobuttons -->
+
+      <!-- Checkboxes -->
+
+      <p class="global-label">Checkboxes</p>
+      <ul class="checkbox__list">
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+            <span class="checkbox-span">Secondary</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--blue icon-done">
+            <span class="checkbox-span">Primary</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input icon-done checkbox-input--pink">
+            <span class="checkbox-span">Uncontrolled</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--dis" disabled>
+            <span class="checkbox-span">Disabled</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input icon-done checkbox-input--dis" disabled checked>
+            <span class="checkbox-span">Disabled</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--diffuse">
+            <span class="checkbox-span">Indeterminate</span>
+          </label>
+        </li>
+      </ul>
+      <ul class="checkbox__list">
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--custom-color icon-done">
+            <span class="checkbox-span">Custom color</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input icon-like-2 checkbox-input--custom-icon">
+            <span class="checkbox-span">Custom icon</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox-input checkbox-input--blue checkbox-input--custom-size icon-done">
+            <span class="checkbox-span">Custom size</span>
+          </label>
+        </li>
+      </ul>
+
+      <p class="global-label">Checkboxes with FormGroup</p>
+      <div class="checkbox-group">
+          <div class="checkbox-group__left">
+            <legend>Assign responsibility</legend>
+            <ul class="checkbox-group__list">
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Gilad Gray</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Jason Killian</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Antoine Llorca</span>
+                </label>
+              </li>
+            </ul>
+            <span class="checkbox-group__left-span">Be careful</span>
+          </div>
+          <div class="checkbox-group__right">
+            <span class="checkbox-group__right-span">Pict two*</span>
+            <ul class="checkbox-group__list">
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Gilad Gray</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Jason Killian</span>
+                </label>
+              </li>
+              <li class="checkbox-group__item">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  <span class="checkbox-span">Antoine Llorca</span>
+                </label>
+              </li>
+            </ul>
+
+<!-- * span не задается отступ -->
+
+            <span class="checkbox-group__right-span">You can display an error</span>
+        </div>
+
+      </div>
+
+      <!-- ../Checkboxes -->
+
+      <!-- Switches -->
+        <div class="swithes">
+          <p class="global-label">Switches</p>
+          <div class="switches__wrap">
+            <ul class="switches__list">
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--pink" checked>
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--blue" checked>
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--uncontrolled">
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--dis" disabled>
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input switches-input--dis" disabled checked>
+              </li>
+              <li class="switches__item">
+                <input type="checkbox" class="switches-input" checked>
+              </li>
+            </ul>
+          </div>
+
+          <p class="global-label">Switches with FormControlLabel</p>
+          <ul class="switches__list">
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--pink" checked>
+              <span>Secondary</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--blue" checked>
+              <span>Primary</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--uncontrolled">
+              <span>Uncontrolled</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--dis" disabled>
+              <span>Disabled</span>
+            </li>
+            <li class="switches__item">
+              <input type="checkbox" class="switches-input switches-input--dis" disabled>
+              <span>Disabled</span>
+            </li>
+          </ul>
+
+          <p class="global-label">Switches with FormGroup</p>
+          <div class="checkbox-group">
+            <div class="checkbox-group__left">
+              <legend>Assign responsibility</legend>
+              <ul class="checkbox-group__list">
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin" checked>
+                    <span class="checkbox-span ml">Gilad Gray</span>
+                  </label>
+                </li>
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin">
+                    <span class="checkbox-span ml">Jason Killian</span>
+                  </label>
+                </li>
+                <li class="checkbox-group__item">
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="switches-input switches-input--pink switches-input--with-margin" checked>
+                    <span class="checkbox-span ml">Antoine Llorca</span>
+                  </label>
+                </li>
+              </ul>
+              <span class="checkbox-group__left-span">Be careful</span>
+            </div>
+          </div>
+
+          <p class="global-label">Label placement</p>
+          <div class="lable-placement">
+            <label class="radiobuttons__label radiobuttons__label--top">
+              <span>Top</span>
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--start">
+              <span>Start</span>
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--bottom">
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+              <span>Bottom</span>
+            </label>
+            <label class="radiobuttons__label radiobuttons__label--end">
+              <input name="radio" type="radio" class="radiobuttons__input radiobuttons__input--pink">
+              <span>End</span>
+            </label>
+          </div>
+
+
+
+        </div>
+      <!-- ../Switches -->
+
+      <!-- Tooltips -->
+
+        <p class="global-label">Positioned Tooltips</p>
+        <div class="tooltips">
+          <div class="tooltips__top">
+            <button class="tooltip tooltip--top-start" data-title="Add">TOP - START</button>
+            <button class="tooltip tooltip--top" data-title="Add">TOP</button>
+            <button class="tooltip tooltip--top-end" data-title="Add">TOP - END</button>
+          </div>
+          <div class="tooltips__aside">
+            <div class="tooltips__left">
+              <button class="tooltip tooltip--left-start" data-title="Add">LEFT-START</button>
+              <button class="tooltip tooltip--left" data-title="Add">LEFT</button>
+              <button class="tooltip tooltip--left-end" data-title="Add">LEFT-END</button>
+            </div>
+            <div class="tooltips__right">
+              <button class="tooltip tooltip--right-start" data-title="Add">RIGHT-START</button>
+              <button class="tooltip tooltip--right" data-title="Add">RIGHT</button>
+              <button class="tooltip tooltip--right-end" data-title="Add">RIGHT-END</button>
+            </div>
+          </div>
+          <div class="tooltips__bottom">
+            <button class="tooltip tooltip--bottom-start" data-title="Add">BOTTOM - START</button>
+            <button class="tooltip tooltip--bottom" data-title="Add">BOTTOM</button>
+            <button class="tooltip tooltip--bottom-end" data-title="Add">BOTTOM - END</button>
+          </div>
+        </div>
+
+        <p class="global-label">Multiline Tab</p>
+        <div class="tooltips-multiline">
+          <button class="tooltip tooltip-multiline" data-title="When activated, tooltips display a text label identifying an element, such as a description of its function.Tooltips appear
+          on hover, focus, or touch, and disappear after a short duration. Tooltips are always paired nearby the element with which they are associated.Tooltips only include short, descriptive text.">Multiline Tab</button>
+        </div>
+
+
+      <!-- ../Tooltips -->
+
+      <!-- Text Field -->
+
+        <p class="global-label">Text Field</p>
+        <div class="textfields">
+          <div class="textfields__wrap">
+            <ul class="textfields__list">
+              <li class="textfields__item">
+                <span class="global-label__span">Inactive</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-first" required>
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <span class="global-label__span">Focused</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-first textfield-first--focused" required value="Text">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <span class="global-label__span">Activated</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-first" required value="Text">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+            </ul>
+            <ul class="textfields__list">
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-first textfield-first--hovered" required>
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+                <span class="global-label__span">Hover</span>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-first textfield-first--error" required value="Input text">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+                <span class="global-label__span">Error Message</span>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-first" required value="Text">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+                <span class="global-label__span">Disabled</span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="global-label">Outlined</p>
+          <div class="textfields__wrap">
+            <ul class="textfields__list">
+              <li class="textfields__item">
+                <span class="global-label__span">Inactive</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Text</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <span class="global-label__span">Focused</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second textfield-second--focused" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <span class="global-label__span">Activated</span>
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+            </ul>
+            <ul class="textfields__list">
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second textfield-second--hovered" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Text</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+
+                </label>
+                <span class="global-label__span">Hover</span>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second--error" required value="Text">
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper textfield__helper--red">Error Text</p>
+
+                </label>
+                <span class="global-label__span">Error Message</span>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label disabled">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+
+                </label>
+                <span class="global-label__span">Disabled</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="textfields__wrap">
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label">
+                  <input type="text" class="textfield textfield-second" required>
+                  <span class="textfield__placeholder textfield__placeholder--outlined">Label</span>
+                  <div class="icon-like-2"></div>
+                  <p class="textfield__helper">Helper text</p>
+                </label>
+              </li>
+
+            </ul>
+          </div>
+
+<!-- TODO -->
+
+          <div class="textfields__wrap textfields__wrap-2">
+            <ul class="textfields__list-uni">
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                    <p class="textfield-select__helper">Please select your currency</p>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-multiline">
+                  <label class="textfield-label">
+                    <textarea class="textfield textfield-textarea"
+                    required>Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                    <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                  </label>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value">$</div>
+                      <span class="textfield-select__placeholder">Adornment</span>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <!-- textfield fill -->
+
+          <div class="textfield-fill">
+            <p class="global-label">Filled</p>
+            <div class="textfields__wrap">
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <span class="global-label__span">Inactive</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Focused</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--focused textfield-filled textfield-filled--focused" required value="Helper text">
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <span class="global-label__span">Activated</span>
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required value="Input text">
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+              </ul>
+              <ul class="textfields__list">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--hovered textfield-filled" required>
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                  <span class="global-label__span">Hover</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-first--error textfield-filled textfield-filled--error" required value="Input text">
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Error message</p>
+                    <div class="icon-fail"></div>
+                  </label>
+                  <span class="global-label__span">Error Message</span>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label disabled">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Input text</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                  <span class="global-label__span">Disabled</span>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="textfields__wrap">
+              <ul class="textfields__list-2">
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+                <li class="textfields__item">
+                  <label class="textfield-label">
+                    <input type="text" class="textfield textfield-first textfield-filled" required>
+                    <span class="textfield__placeholder">Label</span>
+                    <div class="icon-star"></div>
+                    <p class="textfield__helper">Helper text</p>
+                  </label>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="textfields__wrap textfields__wrap-2">
+              <ul class="textfields__list-uni">
+                <li class="textfields__item">
+                  <div class="textfield-select">
+                    <ul class="textfield-select__header">
+                      <li class="textfield-select__header-item">
+                        <div class="default-value default-value--filled">$</div>
+                        <span class="textfield-select__placeholder">Select-text</span>
+                      </li>
+                      <p class="textfield-select__helper">Please select your currency</p>
+                    </ul>
+                    <ul class="textfield-select__body">
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">tg</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">rub</span>
+                      </li>
+                      <li class="textfield-select__item">
+                        <span class="textfield-select__span">$</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="textfields__item">
+                  <div class="textfield-multiline">
+                    <label class="textfield-label">
+                      <textarea class="textfield textfield-textarea textfield-textarea--filled"
+                        required="">Filled text fields have more visual emphasis than outlined text fields, making them stand out when</textarea>
+                      <span class="textfield-textarea__placeholder">Multiline Placeholder</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <!-- ../Text Field filled -->
+
+<!-- TODO CLASSES OF TEXTFIELDS, errors  with colors, margins of label -->
+
+
+          <!-- Text Field Adornments -->
+
+          <p class="global-label">Text Field Adornments</p>
+          <div class="textfields__wrap">
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="Kg">
+                  <span class="textfield__placeholder">Label</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value default-value--filled transparent-bgc">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="$">
+                  <span class="textfield__placeholder">Amount</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required autocomplete="off">
+                  <span class="textfield__end-helper">Kg</span>
+                </label>
+                <p class="textfield__helper">weight</p>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="password" class="textfield textfield-first" required autocomplete="new-password">
+                  <span class="textfield__placeholder">Password</span>
+                  <div class="icon-eye"></div>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <div class="icon-login"></div>
+                  <input type="text" class="textfield textfield-first textfield__start-icon" required value="csc">
+                  <span class="textfield__placeholder">With a start adornment</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <div class="icon-login"></div>
+                  <input type="text" class="textfield textfield-first textfield__start-icon" required value="With a grid">
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <p class="global-label">Outlined Input Adornments</p>
+          <ul class="textfields__list-2">
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required value="Kg">
+                <span class="textfield__placeholder textfield__placeholder--outlined">With outlined TextField</span>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <div class="textfield-select">
+                <ul class="textfield-select__header">
+                  <li class="textfield-select__header-item">
+                    <div class="default-value">Kg</div>
+                    <span class="textfield-select__placeholder">With Select</span>
+                  </li>
+                </ul>
+                <ul class="textfield-select__body">
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">tg</span>
+                  </li>
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">rub</span>
+                  </li>
+                  <li class="textfield-select__item">
+                    <span class="textfield-select__span">$</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required value="$">
+                <span class="textfield__placeholder textfield__placeholder--outlined">Amount</span>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="text" class="textfield textfield-second textfield-second--adornment" required>
+                <span class="textfield__placeholder textfield__placeholder--outlined">Weight</span>
+                <span class="textfield__end-helper end-helper-2">Kg</span>
+                <p class="textfield__helper">Helper text</p>
+              </label>
+            </li>
+            <li class="textfields__item">
+              <label class="textfield-label">
+                <input type="password" class="textfield textfield-second textfield-second--adornment" required>
+                <span class="textfield__placeholder textfield__placeholder--outlined">Password</span>
+                <div class="icon-eye"></div>
+              </label>
+            </li>
+          </ul>
+
+
+            <ul class="textfields__list-2">
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" required value="Kg">
+                  <span class="textfield__placeholder">With filled TextField</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <div class="textfield-select">
+                  <ul class="textfield-select__header">
+                    <li class="textfield-select__header-item">
+                      <div class="default-value default-value--filled transparent-bgc">$</div>
+                      <span class="textfield-select__placeholder">Select-text</span>
+                    </li>
+                  </ul>
+                  <ul class="textfield-select__body">
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">tg</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">rub</span>
+                    </li>
+                    <li class="textfield-select__item">
+                      <span class="textfield-select__span">$</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Amount</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Weight</span>
+                </label>
+              </li>
+              <li class="textfields__item">
+                <label class="textfield-label textfield-label--adornment">
+                  <input type="text" class="textfield textfield-first" value="Kg" required/>
+                  <span class="textfield__placeholder">Password</span>
+                </label>
+              </li>
+            </ul>
+          <!-- ../Text Field Adornments -->
+
+          <!-- Date pickers -->
+
+          <p class="global-label">Date pickers</p>
+          <div class="datepicker-wrapper">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number" required value="24.05.1990">
+              <span class="textfield__placeholder">Birthday</span>
+            </label>
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number icon-cross icon-triangle" required value="24.05.1990">
+              <span class="textfield__placeholder">Birthday</span>
+            </label>
+          </div>
+
+          <p class="global-label">Date & Time pickers</p>
+          <div class="datepicker-wrapper">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">Next appointment</span>
+            </label>
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number icon-cross icon-triangle required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">Next appointment</span>
+            </label>
+          </div>
+
+          <p class="global-label">Date & Time pickers</p>
+          <div class="datepicker-wrapper-2">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number icon-triangle" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">From</span>
+            </label>
+            <label class="textfield-label">
+              <input type="time" class="textfield textfield-first textfield-time icon-triangle" required value="10:30">
+              <span class="textfield__placeholder">Time</span>
+            </label>
+          </div>
+          <div class="datepicker-wrapper-2">
+            <label class="textfield-label">
+              <input type="number" class="textfield textfield-first textfield-number icon-triangle" required value="24.05.2019 10:30">
+              <span class="textfield__placeholder">To</span>
+            </label>
+            <label class="textfield-label">
+              <input type="time" class="textfield textfield-first textfield-time icon-triangle" required value="10:30">
+              <span class="textfield__placeholder">Time</span>
+            </label>
+          </div>
+
+          <!-- ../Date pickers -->
+
+
+        </div>
+
+      <!-- ../Text Field -->
+
+
+<!-- TODO -->
+      <!-- Simple snackbar -->
+
+      <p class="global-label">Simple snackbar</p>
+        <div class="snackbars">
+          <div class="snackbars__top">
+            <div class="snackbar-mui">
+              <p class="global-label__span">Materia-UI</p>
+              <div class="snackbar">
+                <span class="snackbar__span">Note archived</span>
+                <div class="snackbar__end">
+                  <span class="snackbar__span--pink">UNDO</span>
+                  <div class="icon-cross"></div>
+                </div>
+              </div>
+            </div>
+            <div class="snackbar-classic">
+              <p class="global-label__span">classic</p>
+              <div class="snackbar">
+                <span class="snackbar__span classic-text">Note archived</span>
+                <div class="snackbar__end">
+                  <span class="snackbar__span--pink">UNDO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <p class="global-label">Customized Snackbars</p>
+          <div class="snackbar snackbar-customized--error">
+            <div class="snackbar__start">
+              <div class="icon-fail"></div>
+              <span class="snackbar__span">This is an error message!</span>
+            </div>
+            <div class="icon-cross"></div>
+          </div>
+        <div class="snackbar snackbar-customized--warning">
+          <div class="snackbar__start">
+            <div class="icon-triangle-fail"></div>
+            <span class="snackbar__span">This is a warning message!</span>
+          </div>
+          <div class="icon-cross"></div>
+        </div>
+        <div class="snackbar snackbar-customized--info">
+          <div class="snackbar__start">
+            <div class="icon-fail"></div>
+            <span class="snackbar__span">This is an information message!</span>
+          </div>
+          <div class="icon-cross"></div>
+        </div>
+        <div class="snackbar snackbar-customized--success">
+          <div class="snackbar__start">
+            <div class="icon-triangle-fail"></div>
+            <span class="snackbar__span">This is a success message!</span>
+          </div>
+          <div class="icon-cross"></div>
+        </div>
+
+        <p class="global-label">Message Length</p>
+        <p class="global-label__span">Materia-UI</p>
+        <div class="snackbar-length--custom">
+          <p class="snackbar-length__text">I love candy. I love cookies. I love cupcakes. I love cheesecake. I love chocolate.</p>
+          <span class="snackbar-length__lorem">LOREM IPSUM DOLOREM</span>
+        </div>
+        <p class="global-label__span">classic</p>
+        <div class="snackbar-length--custom">
+          <p class="snackbar-length__text classic-text">I love candy. I love cookies. I love cupcakes. I love cheesecake. I love chocolate.</p>
+          <span class="snackbar-length__lorem">LOREM IPSUM DOLOREM</span>
+        </div>
+
+      </div>
+
+      <!-- ../Simple snackbar -->
+
+      <!-- Horizontal Linear -->
+
+      <div class="horizotal-linear">
+        <p class="global-label">Horizontal Linear</p>
+        <span class="global-label__span">Material UI</span>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad</span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent">BACK</button>
+            <button class="basic-button basic-button--blue">SKIP</button>
+            <button class="basic-button basic-button--blue">NEXT</button>
+          </div>
+        </div>
+
+        <span class="global-label__span">Classic</span>
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent classic-text">BACK</button>
+            <button class="basic-button basic-button--blue classic-text">SKIP</button>
+            <button class="basic-button basic-button--blue classic-text">NEXT</button>
+            <button class="basic-button basic-button--blue classic-text">COMPLETE STEP</button>
+          </div>
+        </div>
+
+
+        <!-- alternative label -->
+
+        <span class="global-label__span">Classic</span>
+        <div class="progressbar progressbar-horizontal progressbar-alternative">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent classic-text">BACK</button>
+            <button class="basic-button basic-button--blue classic-text">SKIP</button>
+            <button class="basic-button basic-button--blue classic-text">NEXT</button>
+            <button class="basic-button basic-button--blue classic-text">COMPLETE STEP</button>
+          </div>
+        </div>
+
+        <span class="global-label__span">Classic</span>
+        <div class="progressbar progressbar-horizontal progressbar-alternative">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Create an ad group</span>
+                <span class="progressbar__item-hint classic-text">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title classic-text">Select campaign settings
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper classic-text">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent classic-text">BACK</button>
+            <button class="basic-button basic-button--blue classic-text">SKIP</button>
+            <button class="basic-button basic-button--blue classic-text">NEXT</button>
+            <button class="basic-button basic-button--blue classic-text">COMPLETE STEP</button>
+          </div>
+        </div>
+
+        <!-- ../alternative label -->
+
+        <!-- Error step -->
+
+        <p class="global-label">Horizontal Non Linear - Error Step</p>
+        <span class="global-label__span">Material UI</span>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+              </div>
+            </li>
+            <li class="progressbar__item progressbar__item--error">
+              <div class="progressbar__item-circle icon-warning">
+                <img src="./images/dest/icon-warning.svg" alt="">
+              </div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad</span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent">BACK</button>
+            <button class="basic-button basic-button--blue">SKIP</button>
+            <button class="basic-button basic-button--blue">NEXT</button>
+          </div>
+        </div>
+
+        <p class="global-label">Horizontal Non Linear - Error Step</p>
+        <span class="global-label__span">Classic</span>
+
+        <div class="progressbar progressbar-horizontal">
+          <ul class="progressbar__list">
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+              </div>
+            </li>
+            <li class="progressbar__item progressbar__item--error">
+              <div class="progressbar__item-circle icon-warning">
+                <img src="./images/dest/icon-warning.svg" alt="">
+              </div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">Optional</span>
+              </div>
+            </li>
+            <li class="progressbar__item">
+              <div class="progressbar__item-circle"></div>
+              <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad</span>
+              </div>
+            </li>
+          </ul>
+          <p class="progressbar__helper">What is an ad group anyways?</p>
+          <div class="progressbar__buttons">
+            <button class="basic-button basic-button--transparent">BACK</button>
+            <button class="basic-button basic-button--blue">SKIP</button>
+            <button class="basic-button basic-button--blue">NEXT</button>
+          </div>
+        </div>
+
+        <!-- Error step -->
+
+      </div>
+
+      <!-- ../Horizontal Linear -->
+
+      <!-- Vertical Stepper -->
+
+      <p class="global-label">Vertical Stepper</p>
+      <span class="global-label__span">Material UI</span>
+
+      <div class="progressbar progressbar-vertical">
+        <ul class="progressbar__list progressbar__list--vertical">
+          <li class="progressbar__item progressbar__item-vertical progressbar__item-vertical--active">
+            <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+             <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Select campaign settings</span>
+                <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which
+                networks and geographical locations you want your ads to show on, and more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent">BACK</button>
+                  <button class="basic-button basic-button--blue">NEXT</button>
+                </div>
+              </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+             <div class="progressbar__item-content">
+                <span class="progressbar__item-title">Create an ad group</span>
+                <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent">BACK</button>
+                  <button class="basic-button basic-button--blue">NEXT</button>
+                </div>
+              </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+             <div class="progressbar__item-content">
+              <span class="progressbar__item-title">Create an ad</span>
+              <span class="progressbar__item-hint">For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent">BACK</button>
+                <button class="basic-button basic-button--blue">NEXT</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <p class="global-label">Vertical Stepper</p>
+      <span class="global-label__span">Classic</span>
+
+      <div class="progressbar progressbar-vertical">
+        <ul class="progressbar__list progressbar__list--vertical">
+          <li class="progressbar__item progressbar__item-vertical progressbar__item-vertical--active">
+            <div class="progressbar__item-circle progressbar__item-circle--active"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Select campaign settings</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which
+                networks and geographical locations you want your ads to show on, and more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                <button class="basic-button basic-button--blue classic-text">NEXT</button>
+              </div>
+            </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Create an ad group</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and
+                more.</span>
+                <div class="progressbar__buttons">
+                  <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                  <button class="basic-button basic-button--blue classic-text">NEXT</button>
+                </div>
+            </div>
+          </li>
+          <li class="progressbar__item progressbar__item-vertical">
+            <div class="progressbar__item-circle"></div>
+            <div class="progressbar__item-content">
+              <span class="progressbar__item-title classic-text">Create an ad</span>
+              <span class="progressbar__item-hint classic-text">For each ad campaign that you create, you can control how much you're willing
+                to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and
+                more.</span>
+              <div class="progressbar__buttons">
+                <button class="basic-button basic-button--transparent classic-text">BACK</button>
+                <button class="basic-button basic-button--blue classic-text">NEXT</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ../Vertical Stepper -->
+
+      <!-- slider -->
+
+      <p class="global-label">Mobile Stepper - Text with Carousel effect</p>
+
+      <div class="slider" id="slick">
+        <div class="slider__item">
+          <div class="slider__title">Multicolored Basketball Court</div>
+          <img src="#" data-lazy="images/dest/slider.jpg" alt="slide" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <div class="slider__title">Paris</div>
+          <img src="#" data-lazy="images/dest/slider-2.jpg" alt="slide" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <div class="slider__title">Slider example</div>
+          <img src="#" data-lazy="images/dest/slider-3.jpg" alt="slide" class="slider__img">
+        </div>
+      </div>
+      <div class="slider__footer"></div>
+
+      <!-- ../slider -->
+
+      <!-- mobile slider stepper -->
+      <p class="global-label">Mobile Stepper - Dots</p>
+      <div class="slider__stepper">
+        <button class='icon-arrow a-left control-c prev slick-prev'>Back</button>
+        <ul class="slick-dots" role="tablist" style=""><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li></ul>
+        <button class='a-right control-c next slick-next'>Next<span class='icon-arrow'></span></button>
+      </div>
+      <!-- ../mobile slider stepper -->
+
+      <!-- Mobile Stepper - Progress -->
+
+      <p class="global-label">Mobile Stepper - Progress</p>
+      <div class="slider__stepper">
+        <button class='icon-arrow a-left control-c prev slick-prev'>Back</button>
+        <div class="slider__progress">
+          <input type="range">
+        </div>
+        <button class='a-right control-c next slick-next'>Next<span class='icon-arrow'></span></button>
+
+      </div>
+
+      <!-- ../Mobile Stepper - Progress -->
+
+      <!-- Table -->
+
+      <p class="global-label">Simple Table</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Desserts (100g serving)</th>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th>Carbs (g)</th>
+            <th>Protein (g)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frozen youghurt</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Icecream sandwich</td>
+            <td>159</td>
+            <td>6</td>
+            <td>37</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Eclair</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Cupcake</td>
+            <td>159</td>
+            <td>3,7</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Cingerbread</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!-- sorting & selecting -->
+
+      <p class="global-label">Sorting & Selecting</p>
+      <span class="global-label__span">Material UI</span>
+
+      <div class="table-sorting">
+        <div class="table-sorting__header">
+          <h2 class="table-caption">Nutrition</h2>
+          <div class="icon-filter"></div>
+        </div>
+        <div class="table-sorting__body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </th>
+                <th>Desserts (100g serving)</th>
+                <th>
+                  <div class="icon-up"></div>
+                  Calories
+                </th>
+                <th>
+                  Fat (g)
+                </th>
+                <th>
+                  Carbs (g)
+                </th>
+                <th>
+                  Protein (g)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Frozen youghurt</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Icecream sandwich</td>
+                <td>159</td>
+                <td>6</td>
+                <td>37</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Eclair</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Cupcake</td>
+                <td>159</td>
+                <td>3,7</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Cingerbread</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>3,9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-sorting__footer">
+          <div class="table-sorting__footer-end">
+            <div class="table-sorting__select">
+              <span>Rows per page:</span>
+              <div class="table-sorting__select-number">5
+                <div class="table-sorting__triangle"></div>
+              </div>
+            </div>
+            <span class="table-sorting__span">1-5 of 13</span>
+            <div class="table-sorting__buttons">
+              <div class="icon-arrow icon-arrow--left"></div>
+              <div class="icon-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-sorting">
+        <div class="table-sorting__header table-sorting__header--selected">
+          <h2 class="table-caption table-caption--selected">2 selected</h2>
+          <div class="icon-delete"></div>
+        </div>
+        <div class="table-sorting__body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </th>
+                <th>Desserts (100g serving)</th>
+                <th>
+                  <div class="icon-up"></div>
+                  Calories
+                </th>
+                <th>
+                  Fat (g)
+                </th>
+                <th>
+                  Carbs (g)
+                </th>
+                <th>
+                  Protein (g)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Frozen youghurt</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done" checked>
+                  </label>
+                </td>
+                <td>Icecream sandwich</td>
+                <td>159</td>
+                <td>6</td>
+                <td>37</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Eclair</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done" checked>
+                  </label>
+                </td>
+                <td>Cupcake</td>
+                <td>159</td>
+                <td>3,7</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Cingerbread</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>3,9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-sorting__footer">
+          <div class="table-sorting__footer-end">
+            <div class="table-sorting__select">
+              <span>Rows per page:</span>
+              <div class="table-sorting__select-number">5
+                <div class="table-sorting__triangle"></div>
+              </div>
+            </div>
+            <span class="table-sorting__span">1-5 of 13</span>
+            <div class="table-sorting__buttons">
+              <div class="icon-arrow icon-arrow--left"></div>
+              <div class="icon-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <span class="global-label__span">classic</span>
+
+      <div class="table-sorting table-sorting--classic">
+        <div class="table-sorting__header">
+          <h2 class="table-caption">Nutrition</h2>
+          <div class="icon-filter"></div>
+        </div>
+        <div class="table-sorting__body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </th>
+                <th>Desserts (100g serving)</th>
+                <th>
+                  <div class="icon-up"></div>
+                  Calories
+                </th>
+                <th>
+                  Fat (g)
+                </th>
+                <th>
+                  Carbs (g)
+                </th>
+                <th>
+                  Protein (g)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Frozen youghurt</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Icecream sandwich</td>
+                <td>159</td>
+                <td>6</td>
+                <td>37</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Eclair</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Cupcake</td>
+                <td>159</td>
+                <td>3,7</td>
+                <td>24</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox-input checkbox-input--pink icon-done">
+                  </label>
+                </td>
+                <td>Cingerbread</td>
+                <td>159</td>
+                <td>6</td>
+                <td>24</td>
+                <td>3,9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-sorting__footer">
+          <div class="table-sorting__footer-end">
+            <div class="table-sorting__select">
+              <span>Rows per page:</span>
+              <div class="table-sorting__select-number">5
+                <div class="table-sorting__triangle"></div>
+              </div>
+            </div>
+            <span class="table-sorting__span">1-5 of 13</span>
+            <div class="table-sorting__buttons">
+              <div class="icon-arrow icon-arrow--left"></div>
+              <div class="icon-arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ../sorting & selecting -->
+
+
+      <!-- Spanning Table -->
+
+      <p class="global-label">Spanning Table</p>
+      <table class="table table-error">
+        <thead>
+          <tr>
+            <th>Desc</th>
+            <th></th>
+            <th>Qty</th>
+            <th>@</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paperclips (Box)</td>
+            <td></td>
+            <td>100</td>
+            <td>1.15</td>
+            <td>115.00</td>
+          </tr>
+          <tr>
+            <td>Paper (Case)</td>
+            <td></td>
+            <td>10</td>
+            <td>45.99</td>
+            <td>459.90</td>
+          </tr>
+          <tr>
+            <td rowspan="3"></td>
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Tax</td>
+            <td></td>
+            <td>7%</td>
+            <td>42.76</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Total</td>
+            <td></td>
+            <td>24</td>
+            <td>617.66</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ../Spanning Table -->
+
+      <!-- Virtualized Table -->
+
+      <p class="global-label">Virtualized Table</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Desserts (100g serving)</th>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th>Carbs (g)</th>
+            <th>Protein (g)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frozen youghurt</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Icecream sandwich</td>
+            <td>159</td>
+            <td>6</td>
+            <td>37</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Eclair</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Cupcake</td>
+            <td>159</td>
+            <td>3,7</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Cingerbread</td>
+            <td>159</td>
+            <td>6</td>
+            <td>24</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- ../Virtualized Table -->
+
+      <!-- ../Table -->
+
+      <!-- grid-lists -->
+
+
+      <p class="global-label">Image-only Grid list</p>
+      <div class="grid-lists-1">
+
+        <ul class="grid-list grid-list-7">
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-1.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-2.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-3.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-4.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-5.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-6.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-7.jpg" alt="gallery-image">
+          </li>
+        </ul>
+
+        <ul class="grid-list grid-list-12">
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-1.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-2.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-3.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-4.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-5.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-6.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-7.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-8.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-9.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-10.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-11.jpg" alt="gallery-image">
+          </li>
+          <li class="grid-list__item">
+            <img src="./images/dest/gallery/image-7.jpg" alt="gallery-image">
+          </li>
+        </ul>
+      </div>
+      <!-- ../grid-lists -->
+
+      <div class="grid-lists-wrapper-main">
+        <div class="grid-lists-wrapper">
+          <p class="global-label">Grid list with titlebars</p>
+          <div class="grid-lists-2">
+            <ul class="grid-list-titlebar">
+              <h3 class="grid-list-titlebar__top">February</h3>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Silhouette</h3>
+                  <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-2.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Orchid</h3>
+                  <p class="grid-list-titlebar__by">by: user11</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-3.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Tulip Field</h3>
+                  <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-4.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Butterfly</h3>
+                  <p class="grid-list-titlebar__by">by: photographer</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-1.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Silhouette</h3>
+                  <p class="grid-list-titlebar__by">by: Rakicevic Nenad</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+              <li class="grid-list-titlebar__item">
+                <img src="./images/dest/gallery/titlebar-5.jpg" alt="">
+                <div class="grid-list-titlebar__content">
+                  <h3 class="grid-list-titlebar__title">Orchid</h3>
+                  <p class="grid-list-titlebar__by">by: Tabitha Mort</p>
+                  <div class="icon-fail"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-lists-wrapper">
+          <p class="global-label">Advanced Grid list</p>
+          <ul class="grid-list-advanced">
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-1.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Silhouette</span>
+              </div>
+            </li>
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-2.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Tulip Field</span>
+              </div>
+            </li>
+            <li class="grid-list-advanced__item">
+              <img src="./images/dest/gallery/advanced-3.jpg" alt="">
+              <div class="grid-list-advanced__content">
+                <div class="icon-star"></div>
+                <span class="grid-list-advanced__span">Butterfly</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="global-label">Single line Grid list</p>
+      <ul class="grid-list-single">
+        <li class="grid-list-single__item">
+          <img src="./images/dest/gallery/slingle-1.jpg" alt="">
+          <div class="grid-list-single__content">
+            <span class="grid-list-single__span">Silhouette</span>
+            <div class="icon-star"></div>
+          </div>
+        </li>
+        <li class="grid-list-single__item">
+          <img src="./images/dest/gallery/single-2.jpg" alt="">
+          <div class="grid-list-single__content">
+            <span class="grid-list-single__span">Tulip Field</span>
+            <div class="icon-star"></div>
+          </div>
+        </li>
+        <li class="grid-list-single__item">
+          <img src="./images/dest/gallery/single-3.jpg" alt="">
+          <div class="grid-list-single__content">
+            <span class="grid-list-single__span">Butterfly </span>
+            <div class="icon-star"></div>
+          </div>
+        </li>
+      </ul>
+
+
+      <div class="cards">
+
+        <div class="simple-cards">
+          <div class="simple-cards__item">
+            <p class="global-label">Simple Card</p>
+            <div class="simple-card">
+              <div class="simple-card__tooltip">Word of the Day</div>
+              <div class="simple-card__adjectvie">be*nev*o*lent</div>
+              <div class="simple-card__tooltip">adjective</div>
+              <p class="simple-card__text">well meaning and kindly. “a benevolent smile”</p>
+              <button class="simple-card__more">LEARN MORE</button>
+            </div>
+          </div>
+
+          <div class="simple-cards__item">
+            <p class="global-label">UI Controls</p>
+            <div class="ui-controls">
+              <div class="ui-controls__left">
+                <h3 class="ui-controls__title">People in the city</h3>
+                <span class="ui-controls__by">Air</span>
+                <div class="ui-controls__panel">
+                  <button class="ui-controls__prev icon-next-prev"></button>
+                  <button class="ui-controls__play icon-triangle"></button>
+                  <button class="ui-controls__next icon-next-prev"></button>
+                </div>
+              </div>
+              <div class="ui-controls__right">
+                <img src="./images/dest/media/music.jpg" alt="music">
+              </div>
+            </div>
+          </div>
+
+          <div class="simple-cards__item">
+            <p class="global-label">Complex Interaction</p>
+            <div class="interaction">
+              <div class="interaction__header">
+                <div class="interaction__header-left">
+                <div class="interaction__header-avatar">H</div>
+                <div class="interaction__header-info">
+                  <h3 class="interaction__header-title">Pancake With Sliced Strawberry</h3>
+                  <p class="interaction__header-date">February 28, 2019 </p>
+                </div>
+                </div>
+                <div class="icon-dots"></div>
+                <div class="interaction__header-right"></div>
+              </div>
+              <div class="interaction__img">
+                <img src="./images/dest/media/cakes.jpg" alt="cakes">
+              </div>
+              <div class="interaction__footer">
+                <p class="interaction__text">A pancake (or hotcake, griddlecake, or flapjack) is a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and butter. </p>
+                <div class="interaction__buttons">
+                  <button class="icon-like"></button>
+                  <button class="icon-share"></button>
+                  <button class="icon-arrow"></button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="simple-cards__item">
+            <p class="global-label">Media</p>
+            <div class="media-card">
+              <div class="media-card__img">
+                <img src="./images/dest/media/wolf.jpg" alt="wolf">
+              </div>
+              <div class="media-card__content">
+                <h3 class="media-card__title">Wolf</h3>
+                <p class="media-card__text">The global gray wolf population is estimated
+                  to be 300,000. The gray wolf is one of the world's best-known and most-researched animals. </p>
+                <div class="media-card__buttons">
+                  <button class="media-card__share-button">SHARE</button>
+                  <button class="media-card__more-button">LEARN MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ../simple-cards -->
+      </div>
+      <!-- cards -->
+    </div>
+    <!-- ../container -->
+
+  </main>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

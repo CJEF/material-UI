@@ -1,0 +1,132 @@
+.basic-chip {
+  border-radius: 70px;
+  display: inline-flex;
+  font-size: 13px;
+  height: 33px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  &--gray {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: black;
+      &_outline {
+          border: 1px solid rgba(0, 0, 0, 0.36);
+          background-color: transparent;
+      }
+  }
+  &--blue {
+      background-color: $blue;
+      color: white;
+      .chips__item-before {
+          background-color: $info-msg;
+      }
+      .chips__item-before p {
+          color: white;
+      }
+      [class*=" icon-"], [class^=icon-] {
+          color: white;
+      }
+      &_outline {
+          border: 1px solid $blue;
+          background-color: transparent;
+          color: $blue;
+          [class*=" icon-"], [class^=icon-] {
+              color: $blue;
+          }
+          .chips__item-before .icon-sticker {
+              color: white;
+          }
+      }
+  }
+  &--pink {
+      background-color: $pink;
+      color: white;
+      .chips__item-before {
+          background-color: $gamma-pink;
+      }
+      [class*=" icon-"], [class^=icon-] {
+          color: white;
+      }
+      &_outline {
+          border: 1px solid $pink;
+          background-color: transparent;
+          color: $pink;
+          [class*=" icon-"], [class^=icon-] {
+              color: $pink;
+          }
+          .chips__item-before .icon-sticker {
+              color: white;
+          }
+      }
+  }
+  .icon-sticker {
+          font-size: 16px;
+          padding: 8px;
+      }
+  .icon-done {
+      font-size: 14px;
+  }
+  .icon-close:hover {
+      cursor: pointer;
+  }
+}
+
+.chips__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  &-clickable {
+      cursor: pointer;
+      &.basic-chip--gray {
+          padding-left: 0;
+      }
+  }
+  &-click-deletable {
+      cursor: pointer;
+      &.basic-chip--gray {
+          padding-left: 0;
+      }
+  }
+  &-after {
+      padding: 7px 8px 7px 0;
+      font-size: 20px;
+      border-radius: 70px;
+  }
+  &-before {
+      display: inline-flex;
+      border-radius: 100%;
+      overflow: hidden;
+      background-color:$chips-before;
+  }
+  &-before p {
+      padding: 4px 6px 4px;
+      font-size: 14.5px;
+  }
+  &-before ~ .chips__item-span {
+      padding-left: 7px;
+  }
+  &-after ~ .chips__item-span {
+      padding-right: 5px;
+  }
+  &-span {
+      padding: 0 13px;
+  }
+}
+
+.chips {
+  &__list {
+      flex-wrap: wrap;
+  }
+
+  &__array-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  &__array-item {
+      padding-right: 15px;
+      margin-bottom: 15px;
+  }
+}

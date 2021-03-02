@@ -1,0 +1,315 @@
+.progressbar {
+  margin-bottom: 10px;
+  &__list {
+    padding: 32px 24px;
+    background-color: #fff;
+    counter-reset: progressbar;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    &--vertical {
+      flex-direction: column;
+      .progressbar__item {
+        align-items: flex-start;
+        padding: 10px 10px 20px;
+      }
+    }
+  }
+  &__item-vertical {
+    .progressbar__item-title {
+      margin: 5px 0 9px;
+    }
+    .progressbar__item-hint,
+    .progressbar__buttons {
+      display: none;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 10px;
+    &--error .progressbar__item-content .progressbar__item-title,
+    &--error .progressbar__item-content .progressbar__item-hint {
+      color: $error-input;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 150%;
+      height: 1px;
+      @include vertical-centering;
+      left: 100%;
+      background-color: rgba(0, 0, 0, 0.12);
+      z-index: -5;
+    }
+    &:last-child:after {
+      display: none;
+      padding-right: 0;
+    }
+    &-circle {
+      margin-right: 5px;
+      &--active {
+        background-color: $blue;
+      }
+      &.icon-warning {
+        background-color: transparent;
+        &:before {
+          content: "";
+        }
+      }
+      background-color: $black-light;
+      min-width: 24px;
+      height: 24px;
+      color: white;
+      border-radius: 12px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:before {
+        counter-increment: progressbar;
+        content: counter(progressbar);
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+      .progressbar__buttons {
+        margin-bottom: 0;
+        margin-top: 15px;
+      }
+    }
+    &-title {
+      color: $black-dark;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    &-hint {
+      color: $black-medium;
+      font-size: 12px;
+      max-width: 660px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 65px;
+    button {
+      margin-right: 8px;
+    }
+  }
+  &-alternative {
+    .progressbar__item {
+      flex-direction: column;
+      z-index: inherit;
+      &:after {
+        display: none;
+      }
+      &:last-child .progressbar__item-circle:after {
+        display: none;
+      }
+      &:nth-child(2) .progressbar__item-circle:after {
+        width: 233%;
+        left: 65%;
+      }
+      &-title {
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    .progressbar__item-circle:after {
+      content: "";
+      position: absolute;
+      width: 188%;
+      left: 60%;
+      height: 1px;
+      top: 10px;
+      background-color: rgba(0, 0, 0, 0.12);
+      z-index: 2;
+    }
+  }
+  &__item-vertical.progressbar__item:after {
+    height: 25px;
+    width: 1px;
+    left: 15px;
+    top: 100%;
+  }
+  &__item-vertical--active.progressbar__item:after {
+    width: 1px;
+    height: 126px;
+    left: 15px;
+    top: 75%;
+  }
+  &__item-vertical.progressbar__item-vertical--active {
+    .progressbar__item-hint,
+    .progressbar__buttons {
+      display: flex;
+    }
+    .progressbar__item-content {
+      padding-bottom: 20px;
+    }
+  }
+  &__item-content {
+    margin-left: 0;
+  }
+  &-alternative .progressbar__item-hint,
+  &-alternative .progressbar__item-title {
+    text-align: center;
+  }
+  &-alternative .progressbar__item-circle {
+    z-index: 5;
+  }
+}
+.slider {
+  max-width: 400px;
+  &__title {
+    background-color: #fff;
+    padding: 16px 32px 18px;
+  }
+  &__footer {
+    position: relative;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__stepper {
+    position: relative;
+    max-width: 400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 24px;
+    .prev,
+    .next {
+      top: 22px;
+    }
+  }
+}
+.slick {
+  &-prev,
+  &-next {
+    position: absolute;
+    font-size: 13px;
+    color: $black-dark;
+    text-transform: uppercase;
+  }
+  &-arrow {
+    cursor: pointer;
+    padding: 8px 10px;
+    position: absolute;
+  }
+  &-prev {
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+    &:before {
+      transform: rotate(180deg);
+      margin-right: 10px;
+    }
+  }
+  &-next {
+    right: 15px;
+    top: 10px;
+  }
+  &-dots {
+    position: relative;
+    bottom: -1px;
+    display: flex;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+    }
+    li button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      background-color: $chips-before;
+      border-radius: 4px;
+      margin: 0 3px;
+    }
+    li.slick-active button {
+      background-color: $blue;
+    }
+  }
+}
+.slider__item {
+  height: auto;
+  max-height: 312px;
+}
+
+/* ================================ MEDIA ======================== */
+
+@media (max-width: 1024px) {
+  .progressbar__item::after {
+    width: 110%;
+  }
+  .progressbar-alternative
+    .progressbar__item:nth-child(2)
+    .progressbar__item-circle:after {
+    width: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .progressbar__item::after {
+    width: 50%;
+  }
+  .progressbar-alternative
+    .progressbar__item:nth-child(2)
+    .progressbar__item-circle:after,
+  .progressbar-alternative .progressbar__item-circle:after {
+    display: none;
+  }
+//   .progressbar__item::after {
+//     display: none;
+//   }
+  .progressbar__list {
+    padding: 28px 10px;
+  }
+  .progressbar-alternative .progressbar__item-title,
+  .progressbar__item-title {
+    font-size: 12px;
+  }
+  .progressbar-alternative .progressbar__item-hint {
+    font-size: 11px;
+  }
+  .progressbar__list--vertical .progressbar__item {
+    padding: 10px 0 20px;
+  }
+  .progressbar__buttons {
+    flex-wrap: wrap;
+  }
+  .progressbar__buttons button {
+    margin-bottom: 8px;
+  }
+  .progressbar__list {
+      padding: 28px 0;
+  }
+  .progressbar__item {
+      padding: 0 3px;
+  }
+  .progressbar-horizontal .progressbar__item {
+    width: 33.3%;
+}
+  .progressbar__list--vertical .progressbar__item {
+      padding: 10px 3px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+    .progressbar__buttons {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+}

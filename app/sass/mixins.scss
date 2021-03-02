@@ -1,0 +1,16 @@
+@mixin input-icons() {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin vertical-centering() {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-centering() {
+    left: 50%;
+    transform: translateX(-50%);
+}

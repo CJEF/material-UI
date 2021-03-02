@@ -1,0 +1,156 @@
+.appbar-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: $blue;
+  padding: 18.5px 36px 21.5px 27.5px;
+  align-items: center;
+  [class^="icon-"], [class*=" icon-"] {
+      color: white;
+      font-size: 20px;
+  }
+  .icon-plus {
+    font-size: 14px;
+  }
+  .icon-dots:before {
+    font-size: 15.5px;
+  }
+  .icon-search:before {
+      font-size: 17.5px;
+  }
+  .icon-menu:before {
+    font-size: 12px;
+  }
+  .icon-mail {
+    padding: 0;
+  }
+  .icon-mail:before {
+    font-size: 16px;
+  }
+  &__link {
+    margin-left: 35px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: white;
+  }
+  .login {
+    margin-left: auto;
+    font-size: 14px;
+    color: white;
+  }
+  &--white {
+    background-color: white;
+    .appbar-wrap__link {
+      margin-left: 0;
+      color: black;
+    }
+  }
+  &__icon {
+    position: relative;
+    margin-left: 30px;
+    &-badge {
+      display: flex;
+      position: absolute;
+      min-width: 20px;
+      height: 20px;
+      top: -13px;
+    right: -9px;
+      border-radius: 50%;
+      background-color: $beta-pink;
+      font-size: 12px;
+      font-weight: 500;
+      justify-content: center; // по горизонтали
+      align-items: center; // по вертикали
+    }
+    &:before {
+      color: white;
+    }
+  }
+  .burger {
+    display: inline-flex;
+  }
+  &__input {
+    position: relative;
+    display: inline-flex;
+
+
+
+    &.icon-search:before {
+      z-index: 2;
+      position: absolute;
+      left: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__add-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -28px;
+      right: 46%;
+      width: 56px;
+      height: 56px;
+      background-color: $pink;
+      border-radius: 50%;
+      transition: .3s;
+  }
+  // &__add-button:hover {
+  //   transform: rotate(360deg);
+  //   transform: translateX(-50%);
+  // }
+}
+
+.search-input {
+  position: relative;
+  background-color: $input;
+  padding: 9px 20px 8px 60px;
+  color: white;
+  &::placeholder {
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    color: $input-placeholder;
+  }
+  // &:value {
+  //   font-family: 'Roboto-Regular', sans-serif;
+  // }
+}
+
+.appbar-wrap .appbar-wrap__icon.icon-notification .appbar-wrap__icon-badge {
+  top: -9px;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 200px;
+  }
+  .appbar-wrap__link {
+    margin: 0 10px;
+  }
+  .appbar-wrap__icon {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .appbar-wrap__link {
+    font-size: 17px;
+  }
+  .appbar-wrap {
+    padding: 16.5px 13px 18.5px 11.5px;
+  }
+  .search-input {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 460px) {
+  .search-input,
+  .appbar-wrap__input {
+    display: none;
+  }
+  .appbar-wrap__add-button {
+    right: 42%;
+  }
+}

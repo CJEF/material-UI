@@ -1,0 +1,505 @@
+.textfields {
+  &__list-2 {
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    .textfields__item {
+      margin-bottom: 0;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &-2 {
+      margin-top: 50px;
+    }
+  }
+  &__list:first-child {
+    margin-right: 30px;
+  }
+  &__item {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    .global-label__span {
+      margin-left: 10px;
+    }
+  }
+  .global-label__span {
+    margin-bottom: 0;
+    min-width: 55px;
+  }
+  &__list-uni {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .textfields__item {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.textfield {
+  appearance: none;
+  background-color: transparent;
+  padding: 22px 35px 18px 0;
+  font-size: 16px;
+  color: $black-dark;
+  width: 320px;
+  background-color: transparent;
+  border-bottom: 1px solid $black-light;
+  transition: background-size 0.3s ease;
+  line-height: 14px;
+
+  &:focus::placeholder {
+    // db
+  }
+
+  &-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: max-content;
+    .icon-like-2,
+    .icon-fail,
+    .icon-star,
+    .icon-eye,
+    .icon-login {
+      @include input-icons;
+    }
+    .icon-fail {
+      color: $error-input;
+    }
+    .icon-eye {
+      cursor: pointer;
+    }
+    .icon-login {
+      left: 0;
+    }
+  }
+  &__placeholder {
+    position: absolute;
+    color: $black-medium;
+    transition: 0.3s ease;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &-first--focused {
+    border-color: $blue;
+    & ~ .textfield__placeholder {
+      color: $blue;
+    }
+  }
+  &-first--error {
+    border-color: $error-input;
+    & ~ .textfield__placeholder {
+      color: $error-input;
+    }
+  }
+  &-first--focused &-first:hover,
+  &-first--hovered {
+    border-color: $black-dark;
+  }
+
+  &-first:focus,
+  &-second:focus {
+    border-color: $blue;
+  }
+  &-second--focused {
+    & ~ .textfield__placeholder {
+      color: $blue;
+    }
+  }
+  &-second.textfield-second--focused {
+    border-color: $blue;
+  }
+
+  &-first:valid ~ .textfield__placeholder,
+  &-first:focus ~ .textfield__placeholder,
+  &-first--focused ~ .textfield__placeholder,
+  &-second:valid ~ .textfield__placeholder,
+  &-second:focus ~ .textfield__placeholder,
+  &-second--focused ~ .textfield__placeholder,
+  &-second--error:valid ~ .textfield__placeholder,
+  &-first--error:valid ~ .textfield__placeholder {
+    border-color: $black-medium;
+    opacity: 0.87;
+    font-size: 12px;
+    top: -7px;
+    background-color: $bgc;
+    transform: translateY(0);
+  }
+
+  &-filled--error:valid ~ .textfield__placeholder {
+    top: 5px;
+    color: $error-input;
+  }
+  &-filled--focused:valid ~ .textfield__placeholder {
+    top: 5px;
+    color: $blue;
+  }
+  &-filled--error:valid {
+    border-color: $error-input;
+  }
+  &-filled--focused:valid {
+    border-color: $blue;
+  }
+
+  &-filled:focus ~ .textfield__placeholder,
+  &-filled--focused ~ .textfield__placeholder,
+  &-first:valid ~ .textfield__placeholder {
+    background-color: transparent;
+  }
+  &-first:focus ~ .textfield__placeholder {
+    color: $blue;
+  }
+  &-first--error:focus {
+    border-color: $error-input;
+  }
+  &-first--error:focus ~ .textfield__placeholder {
+    color: $error-input;
+  }
+  &-first--disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /* second textfield */
+
+  &__placeholder--outlined {
+    padding: 0 6px;
+  }
+
+  &-second:focus ~ .textfield__placeholder--outlined,
+  &-second--focused .textfield__placeholder--outlined {
+    color: $blue;
+    font-size: 12px;
+    top: -7px;
+    transform: translateY(0);
+    background-color: $bgc;
+  }
+
+  /* second */
+
+  &-second {
+    border: 1px solid $black-light;
+    border-radius: 4px;
+    padding: 19px 40px 19px 13px;
+    position: relative;
+
+    &--error {
+      border: 1px solid $error-input;
+      border-color: $error-input;
+      border-radius: 4px;
+      padding: 19px 40px 19px 13px;
+      & ~ .textfield__placeholder {
+        color: $error-input;
+      }
+    }
+    &--error:focus ~ .textfield__placeholder--outlined,
+    &-second--focused .textfield__placeholder--outlined {
+      color: $error-input;
+      font-size: 12px;
+      top: -7px;
+      transform: translateY(0);
+      background-color: $bgc;
+    }
+    &:hover,
+    &--hovered {
+      border-color: $black-dark;
+    }
+
+    &:focus {
+      border-color: $blue;
+    }
+    &--adornment {
+      width: 200px;
+    }
+  }
+
+  &__placeholder--outlined.textfield__placeholder {
+    left: 8px;
+  }
+
+  &__helper {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    color: $black-medium;
+    font-size: 12px;
+    position: absolute;
+    top: 57px;
+    left: 15px;
+    &--red {
+      color: $error-input;
+    }
+  }
+
+  /* textfields-wrap-2 */
+
+  &-select {
+    position: relative;
+    color: $black-medium;
+    cursor: pointer;
+    .default-value {
+      min-width: 200px;
+      position: relative;
+      border: 1px solid $black-light;
+      border-radius: 4px;
+      padding: 19px 12px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        width: 0px;
+        height: 0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+      }
+    }
+    .default-value.default-value--filled {
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $black-light;
+      background-color: rgba(0, 0, 0, 0.03);
+
+      & ~ .textfield-select__placeholder {
+        background-color: transparent;
+        padding: 0 2.5px;
+      }
+
+      &.transparent-bgc {
+        background-color: transparent;
+      }
+    }
+    &__placeholder {
+      position: absolute;
+      font-size: 12px;
+      top: -6px;
+      left: 9px;
+      padding: 0 4px;
+      background-color: $bgc;
+    }
+    &__helper {
+      font-size: 12px;
+      padding-left: 12px;
+    }
+    &__body {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: #fff;
+      overflow: hidden;
+      border-radius: 4px;
+      top: 64px;
+      z-index: 2;
+      &.active {
+        display: block;
+      }
+    }
+
+    &__item {
+      padding: 10px;
+      transition: 0.2s;
+      &:hover {
+        background-color: $black-light;
+        color: white;
+      }
+    }
+  }
+
+  &-textarea {
+    resize: none;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid $black-light;
+    border-radius: 4px;
+    padding: 18px 12px 13px;
+    width: 315px;
+    min-height: 90px;
+    margin-right: 0;
+    &__placeholder {
+      position: absolute;
+      top: -7.5px;
+      padding: 0 4px 2px;
+      left: 9px;
+      font-size: 12px;
+      background-color: $bgc;
+      color: $black-medium;
+    }
+    &:hover {
+      border-color: $black-dark;
+    }
+  }
+
+  /* ../textfields-wrap-2 */
+
+  /* textfield filled */
+
+  &-fill {
+    transition: 0.2s;
+    margin-top: 70px;
+  }
+  &-filled {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-left: 12px;
+    &:hover {
+      background-color: #dadada;
+    }
+    &:valid ~ .textfield__placeholder {
+      top: 5px;
+    }
+    &--error ~ .textfield__helper {
+      color: $error-input;
+    }
+  }
+  &-filled ~ &__placeholder {
+    padding-left: 12px;
+  }
+  &-filled:focus ~ .textfield__placeholder,
+  &-filled--focused .textfield__placeholder {
+    top: 5px;
+  }
+
+  &-textarea.textfield-textarea--filled.textfield {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $black-light;
+    background-color: rgba(0, 0, 0, 0.03);
+    &:hover {
+      background-color: #dadada;
+      border-bottom: 1px solid $black-dark;
+    }
+    & ~ .textfield-textarea__placeholder {
+      background-color: #ccc;
+      top: 0;
+    }
+    &:focus {
+      border-bottom: 1px solid $black-dark;
+    }
+  }
+
+  // .icon-fail ~ .textfield-filled {
+  //     padding-right: 30px;
+  // }
+
+  /* ../textfield filled */
+
+  /* adornments */
+
+  &-label.textfield-label--adornment .textfield {
+    max-width: 200px;
+  }
+
+  &__end-helper {
+    position: absolute;
+    @include vertical-centering;
+    right: 0;
+    color: $black-medium;
+    &.end-helper-2 {
+      right: 12px;
+    }
+  }
+
+  &__start-icon {
+    padding-left: 30px;
+  }
+
+  /* ../adornments */
+}
+
+/* datepicker */
+
+.datepicker {
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .textfield-label:first-child {
+      margin-right: 50px;
+    }
+  }
+  &-wrapper-2 {
+    display: flex;
+    margin-bottom: 50px;
+    .textfield-label:first-child {
+      margin-right: 15px;
+    }
+  }
+}
+
+.textfield-time {
+  max-width: 85px;
+  padding: 21px 0 16px;
+  &.icon-triangle:before {
+    position: absolute;
+    font-size: 9px;
+    right: 10px;
+    z-index: -5;
+  }
+}
+
+input[time] {
+  &::placeholder {
+    display: none;
+  }
+  &:focus::placeholder {
+    display: block;
+  }
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+}
+/* ../datepicker */
+
+/* ============================= MEDIA ================================= */
+
+@media (max-width: 935px) {
+  .textfields__list:first-child {
+    margin-right: 0;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .datepicker-wrapper {
+    flex-direction: column;
+  }
+  .datepicker-wrapper .textfield-label:first-child {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .textfields__list-uni .textfields__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .textfield-number {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 420px) {
+  .textfield {
+    width: 200px;
+    // padding: 18px 31px 14px 13px;
+  }
+  .textfields__list-2 {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,111 @@
+.snackbars {
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+    justify-self: space-between;
+    }
+}
+
+.snackbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131;
+    border-radius: 2px;
+    padding: 19px 23px;
+    min-width: 290px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    .icon-cross {
+        font-size: 14px;
+    }
+
+    [class^="icon-"], [class*=" icon-"] {
+        color: white;
+    }
+
+    &__span {
+        letter-spacing: 0.25px;
+        font-size: 14px;
+        color: white;
+        &--pink {
+            letter-spacing: 0.3px;
+            font-size: 13px;
+            color: $pink;
+            margin-right: 25px;
+        }
+    }
+    .icon-cross {
+        color: white;
+    }
+    &__end {
+        display: flex;
+        justify-content: space-between;
+        .icon-cross::before {
+            font-size: 14px;
+        }
+    }
+    &-classic .snackbar__span--pink {
+        margin-right: 0;
+    }
+    &-mui {
+        margin-right: 65px;
+    }
+    &-customized--error {
+        background-color: #B00020;
+        max-width: 340px;
+    }
+    &-customized--info {
+        background-color: $info-msg;
+        max-width: 340px;
+
+    }
+    &-customized--warning {
+        background-color: $warning-msg;
+        max-width: 340px;
+
+    }
+    &-customized--success {
+        background-color: $success-msg;
+        max-width: 340px;
+
+    }
+    &__start {
+        display: flex;
+        align-items: center;
+        [class^="icon-"], [class*=" icon-"] {
+            margin-right: 10px;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+    &-length--custom {
+        padding: 18px 24px 14px;
+        background-color: #313131;
+        color: white;
+        max-width: 700px;
+        margin-bottom: 65px;
+    }
+    &-length--custom:last-child {
+        margin-bottom: 0;
+    }
+    &-length__text {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    &-length__lorem {
+        color: $pink;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .snackbar-length--custom {
+        margin-bottom: 20px;
+    }
+}

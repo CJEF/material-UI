@@ -1,0 +1,145 @@
+.checkbox {
+  &__item {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  &-label {
+    display: flex;
+    align-items: center;
+  }
+  &-span {
+    color: $black-dark;
+    cursor: pointer;
+  }
+  &-input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid $black-medium;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 16px;
+    &--blue:checked {
+      background-color: $blue;
+      border-color: $blue;
+    }
+    &--pink:checked {
+      background-color: $pink;
+      border-color: $pink;
+    }
+    &--dis {
+      border-color: $black-light;
+      cursor: default;
+      & ~ .checkbox-span {
+        color: $black-light;
+        cursor: default;
+      }
+    }
+    &--diffuse {
+      border: none;
+      background-color: $black-light;
+      position: relative;
+      &:checked {
+        background-color: $pink;
+      }
+      &:before {
+        content: "";
+        width: 12px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+      }
+    }
+    &--custom-color {
+      &:checked {
+        background-color: $custom-checkbox;
+        border-color: $custom-checkbox;
+      }
+    }
+    &--custom-icon {
+      border: none;
+      &:checked {
+        color: $pink;
+      }
+    }
+  }
+  &-input.icon-done {
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: transparent;
+  }
+  &-input:checked.icon-done {
+    color: white;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Checkboxes with FormGroup */
+
+  &-group {
+    display: inline-flex;
+    padding: 17px 22px;
+    background-color: white;
+    &__left {
+      margin-right: 45px;
+      legend {
+        color: $black-medium;
+        font-size: 16px;
+        color: black;
+      }
+    }
+    &__left-span {
+        margin-top: 15px;
+        font-size: 12px;
+        color: black-medium;
+      }
+    &__item {
+      display: flex;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__right {
+      &-span {
+        font-size: 12px;
+        color: #f44336;
+        margin-top: 15px;
+        &:first-child {
+          margin: 0 0 20px 0;
+          font-size: 16px;
+        }
+      }
+    }
+    &__list {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+  }
+
+  /* ../Checkboxes with FormGroup */
+}
+
+/* ======================== MEDIA ===================== */
+
+@media (max-width: 450px) {
+  .checkbox {
+    &-group__left legend {
+      font-size: 12px;
+    }
+    &-group {
+      padding: 17px 7px;
+    }
+    &-span,
+    &-group__right-span:first-child {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.tooltips {
+    max-width: 750px;
+    padding: 40px;
+    &__top,
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            margin-right: 30px;
+        }
+        button:last-child {
+            margin-right: 0;
+        }
+    }
+    &__aside {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+    }
+    &__left,
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
+    &__left,
+    &__right {
+        button {
+            margin-bottom: 25px;
+        }
+        button:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.tooltip {
+    position: relative;
+    color: $black-dark;
+    font-size: 14px;
+    line-height: 12px;
+    &:hover::after {
+        content: attr(data-title);
+        font-size: 10px;
+        line-height: 12px;
+        position: absolute;
+        color: #fff;
+        padding: 6px 8px;
+        background: rgba(0, 0, 0, 0.54);
+        border-radius: 4px;
+        top: 25px;
+        left: 0;
+        text-align: left;
+        max-width: 300px;
+    }
+    &-multiline {
+        margin-bottom: 110px;
+        &:hover::after {
+            min-width: 300px;
+        }
+    }
+    &--top {
+        &:hover::after {
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-start {
+            &:hover::after {
+                top: -40px;
+                left: -15px;
+            }
+        }
+        &-end {
+            &:hover::after {
+                top: -40px;
+                left: 70px;
+            }
+        }
+    }
+    &--left {
+        &:hover::after {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -25px;
+        }
+        &-start {
+            &:hover::after {
+                top: -24px;
+                left: -53px;
+
+            }
+        }
+        &-end {
+            &:hover::after {
+            top: 15px;
+            left: -45px;
+
+            }
+        }
+    }
+    &--right {
+        &:hover::after {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 87px;
+        }
+        &-start {
+            &:hover::after {
+                left: 115px;
+                top: -23px;
+
+            }
+        }
+        &-end {
+            &:hover::after {
+                left: 105px;
+                top: 13px;
+            }
+        }
+    }
+    &--bottom {
+        &:hover::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-start {
+            &:hover::after {
+                left: -25px;
+            }
+        }
+        &-end {
+            &:hover::after {
+                left: 110px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .tooltip {
+        font-size: 11px;
+    }
+}
