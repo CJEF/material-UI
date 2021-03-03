@@ -115,6 +115,14 @@
   // &:value {
   //   font-family: 'Roboto-Regular', sans-serif;
   // }
+  &__small {
+    width: 212px;
+    transition: .2s;
+    &:focus,
+    &:valid {
+      width: 288px;
+    }
+  }
 }
 
 .appbar-wrap .appbar-wrap__icon.icon-notification .appbar-wrap__icon-badge {
