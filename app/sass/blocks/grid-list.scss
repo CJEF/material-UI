@@ -73,14 +73,14 @@
     overflow-x: auto;
     &__top {
       width: 100%;
-      max-width: 97%;
+      max-width: 96%;
       padding: 17px 16px;
       background-color: #fff;
     }
     &__item {
       margin-right: 4px;
       margin-bottom: 4px;
-      max-width: 48%;
+      max-width: 47%;
       position: relative;
       overflow: hidden;
     }
@@ -425,5 +425,14 @@
   .grid-list__item:nth-child(5n+6) {
     max-width: 35%;
   }
-  
+  .grid-list-titlebar__content {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .grid-list-titlebar__by {
+    font-size: 10px;
+  }
 }

@@ -135,13 +135,13 @@
   &__item-vertical.progressbar__item:after {
     height: 25px;
     width: 1px;
-    left: 15px;
+    left: 22px;
     top: 100%;
   }
   &__item-vertical--active.progressbar__item:after {
     width: 1px;
     height: 126px;
-    left: 15px;
+    left: 22px;
     top: 75%;
   }
   &__item-vertical.progressbar__item-vertical--active {
@@ -243,7 +243,7 @@
 }
 .slider__item {
   height: auto;
-  max-height: 312px;
+  max-height: 308px;
 }
 
 /* ================================ MEDIA ======================== */
@@ -308,5 +308,8 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
+  .slider__item {
+    max-height: 238px;
+  }
 }
