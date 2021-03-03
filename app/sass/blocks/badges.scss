@@ -162,6 +162,12 @@
 
 /* ==================== MEDIA ===================== */
 
+@media (max-width: 768px) {
+    .badges__tab-badge {
+        right: 7px;
+    }
+}
+
 @media (max-width: 550px) {
     .badges {
         &__row {
@@ -170,12 +176,9 @@
         }
         &-mail__list {
             margin-bottom: 10px;
-        } 
+        }
         &-typography {
             margin-bottom: 20px;
-        }
-        &__tab-badge {
-            right: 7px;
         }
     }
 }

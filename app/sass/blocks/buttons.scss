@@ -156,6 +156,7 @@
 
 .button-round {
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
     width: 56px;
@@ -165,6 +166,10 @@
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14);
     cursor: pointer;
+    text-align: center;
+    [class*=" icon-"], [class^=icon-] {
+        margin: auto;
+    }
     &--pink {
         background-color: $beta-pink;
 
@@ -344,5 +349,5 @@
 }
 
 @media (max-width: 350px) {
-    
+
 }

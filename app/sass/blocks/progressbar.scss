@@ -300,6 +300,10 @@
   .progressbar__list--vertical .progressbar__item {
       padding: 10px 3px 20px;
   }
+  .progressbar__item-vertical--active.progressbar__item:after,
+  .progressbar__item-vertical.progressbar__item:after {
+    left: 15px;
+  }
 }
 
 @media (max-width: 500px) {
