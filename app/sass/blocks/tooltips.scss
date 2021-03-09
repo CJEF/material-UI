@@ -141,4 +141,12 @@
     .tooltip {
         font-size: 11px;
     }
+    .tooltip--right-start:hover::after,
+    .tooltip--right-end:hover::after {
+        left: 85px;
+    }
+    .tooltip--bottom-end:hover::after,
+    .tooltip--top-end:hover::after {
+        left: 50px;
+    }
 }

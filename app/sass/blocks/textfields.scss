@@ -56,8 +56,8 @@
   transition: background-size 0.3s ease;
   line-height: 14px;
 
-  &:focus::placeholder {
-    // db
+  &:valid ~ .textfield__placeholder {
+    
   }
 
   &-label {

@@ -284,14 +284,20 @@
     flex-direction: column;
 }
 
+// icon then text
+
 .icon-span-button {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.24);
     [class*=" icon-"]:before, [class^=icon-]:before {
         font-size: 18px;
         margin-right: 6px;
     }
 }
 
+// text then icon
+
 .span-icon-button {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.24);
     [class*=" icon-"]:before, [class^=icon-]:before {
         font-size: 18px;
         margin-left: 6px;
